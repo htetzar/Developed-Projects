@@ -1,0 +1,139 @@
+C:\Users\e0001871\Downloads\SA43_Team10A_LibrarySystem-20161007T055349Z\SA43_Team10A_LibrarySystem\bin\Debug\SA43_Team10A_LibrarySystem.exe.config
+C:\Users\e0001871\Downloads\SA43_Team10A_LibrarySystem-20161007T055349Z\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.csprojResolveAssemblyReference.cache
+C:\Users\e0001871\Downloads\SA43_Team10A_LibrarySystem-20161007T055349Z\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.frmBorrow.resources
+C:\Users\e0001871\Downloads\SA43_Team10A_LibrarySystem-20161007T055349Z\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.frmLogin.resources
+C:\Users\e0001871\Downloads\SA43_Team10A_LibrarySystem-20161007T055349Z\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.frmBookMaintenance.resources
+C:\Users\e0001871\Downloads\SA43_Team10A_LibrarySystem-20161007T055349Z\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.frmMain.resources
+C:\Users\e0001871\Downloads\SA43_Team10A_LibrarySystem-20161007T055349Z\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.frmMemberMaintenance.resources
+C:\Users\e0001871\Downloads\SA43_Team10A_LibrarySystem-20161007T055349Z\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.frmMemberSearch.resources
+C:\Users\e0001871\Downloads\SA43_Team10A_LibrarySystem-20161007T055349Z\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.frmReturn.resources
+C:\Users\e0001871\Downloads\SA43_Team10A_LibrarySystem-20161007T055349Z\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.frmSearch.resources
+C:\Users\e0001871\Downloads\SA43_Team10A_LibrarySystem-20161007T055349Z\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.csproj.GenerateResource.Cache
+C:\Users\e0001871\Downloads\SA43_Team10A_LibrarySystem-20161007T055349Z\SA43_Team10A_LibrarySystem\bin\Debug\SA43_Team10A_LibrarySystem.exe
+C:\Users\e0001871\Downloads\SA43_Team10A_LibrarySystem-20161007T055349Z\SA43_Team10A_LibrarySystem\bin\Debug\SA43_Team10A_LibrarySystem.pdb
+C:\Users\e0001871\Downloads\SA43_Team10A_LibrarySystem-20161007T055349Z\SA43_Team10A_LibrarySystem\bin\Debug\EntityFramework.dll
+C:\Users\e0001871\Downloads\SA43_Team10A_LibrarySystem-20161007T055349Z\SA43_Team10A_LibrarySystem\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\e0001871\Downloads\SA43_Team10A_LibrarySystem-20161007T055349Z\SA43_Team10A_LibrarySystem\bin\Debug\EntityFramework.xml
+C:\Users\e0001871\Downloads\SA43_Team10A_LibrarySystem-20161007T055349Z\SA43_Team10A_LibrarySystem\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\e0001871\Downloads\SA43_Team10A_LibrarySystem-20161007T055349Z\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.Properties.Resources.resources
+C:\Users\e0001871\Downloads\SA43_Team10A_LibrarySystem-20161007T055349Z\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.exe
+C:\Users\e0001871\Downloads\SA43_Team10A_LibrarySystem-20161007T055349Z\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.pdb
+C:\Users\e0001871\Downloads\SA43_Team10A_LibrarySystem-20161007T055349Z\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.frmReportBookInfo.resources
+C:\Users\e0001871\Downloads\SA43_Team10A_LibrarySystem-20161007T055349Z\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.frmReportPopularBook.resources
+C:\Users\e0001871\Downloads\SA43_Team10A_LibrarySystem-20161007T055349Z - v3\SA43_Team10A_LibrarySystem\bin\Debug\SA43_Team10A_LibrarySystem.exe.config
+C:\Users\e0001871\Downloads\SA43_Team10A_LibrarySystem-20161007T055349Z - v3\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.exe
+C:\Users\e0001871\Downloads\SA43_Team10A_LibrarySystem-20161007T055349Z - v3\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.pdb
+C:\Users\e0001871\Downloads\SA43_Team10A_LibrarySystem-20161007T055349Z - v3\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.frmBorrow.resources
+C:\Users\e0001871\Downloads\SA43_Team10A_LibrarySystem-20161007T055349Z - v3\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.frmLogin.resources
+C:\Users\e0001871\Downloads\SA43_Team10A_LibrarySystem-20161007T055349Z - v3\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.frmBookMaintenance.resources
+C:\Users\e0001871\Downloads\SA43_Team10A_LibrarySystem-20161007T055349Z - v3\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.frmMain.resources
+C:\Users\e0001871\Downloads\SA43_Team10A_LibrarySystem-20161007T055349Z - v3\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.frmMemberMaintenance.resources
+C:\Users\e0001871\Downloads\SA43_Team10A_LibrarySystem-20161007T055349Z - v3\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.frmMemberSearch.resources
+C:\Users\e0001871\Downloads\SA43_Team10A_LibrarySystem-20161007T055349Z - v3\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.frmReportBookInfo.resources
+C:\Users\e0001871\Downloads\SA43_Team10A_LibrarySystem-20161007T055349Z - v3\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.frmReportPopularBook.resources
+C:\Users\e0001871\Downloads\SA43_Team10A_LibrarySystem-20161007T055349Z - v3\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.frmReturn.resources
+C:\Users\e0001871\Downloads\SA43_Team10A_LibrarySystem-20161007T055349Z - v3\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.frmSearch.resources
+C:\Users\e0001871\Downloads\SA43_Team10A_LibrarySystem-20161007T055349Z - v3\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.Properties.Resources.resources
+C:\Users\e0001871\Downloads\SA43_Team10A_LibrarySystem-20161007T055349Z - v3\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.csproj.GenerateResource.Cache
+C:\Users\e0001871\Downloads\SA43_Team10A_LibrarySystem-20161007T055349Z - v3\SA43_Team10A_LibrarySystem\bin\Debug\SA43_Team10A_LibrarySystem.exe
+C:\Users\e0001871\Downloads\SA43_Team10A_LibrarySystem-20161007T055349Z - v3\SA43_Team10A_LibrarySystem\bin\Debug\SA43_Team10A_LibrarySystem.pdb
+C:\Users\e0001871\Downloads\SA43_Team10A_LibrarySystem-20161007T055349Z - v3\SA43_Team10A_LibrarySystem\bin\Debug\EntityFramework.dll
+C:\Users\e0001871\Downloads\SA43_Team10A_LibrarySystem-20161007T055349Z - v3\SA43_Team10A_LibrarySystem\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\e0001871\Downloads\SA43_Team10A_LibrarySystem-20161007T055349Z - v3\SA43_Team10A_LibrarySystem\bin\Debug\EntityFramework.xml
+C:\Users\e0001871\Downloads\SA43_Team10A_LibrarySystem-20161007T055349Z - v3\SA43_Team10A_LibrarySystem\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\e0001871\Downloads\SA43_Team10A_LibrarySystem-20161007T055349Z - v3\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.frmReportBorrowingBookInfo.resources
+C:\Users\e0001871\Downloads\SA43_Team10A_LibrarySystem-20161007T055349Z - v3\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.csprojResolveAssemblyReference.cache
+C:\Users\e0001871\Downloads\SA43_Team10A_LibrarySystem_Final_Project-20161007T113048Z\SA43_Team10A_LibrarySystem_Final_Project\SA43_Team10A_LibrarySystem\bin\Debug\SA43_Team10A_LibrarySystem.exe.config
+C:\Users\e0001871\Downloads\SA43_Team10A_LibrarySystem_Final_Project-20161007T113048Z\SA43_Team10A_LibrarySystem_Final_Project\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.exe
+C:\Users\e0001871\Downloads\SA43_Team10A_LibrarySystem_Final_Project-20161007T113048Z\SA43_Team10A_LibrarySystem_Final_Project\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.pdb
+C:\Users\e0046686\Downloads\SA43_Team10A_LibraySystem Final\SA43_Team10A_LibrarySystem\bin\Debug\SA43_Team10A_LibrarySystem.exe.config
+C:\Users\e0046686\Downloads\SA43_Team10A_LibraySystem Final\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.exe
+C:\Users\e0046686\Downloads\SA43_Team10A_LibraySystem Final\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.pdb
+C:\Users\e0046686\Downloads\SA43_Team10A_LibraySystem Final\SA43_Team10A_LibrarySystem\bin\Debug\SA43_Team10A_LibrarySystem.exe
+C:\Users\e0046686\Downloads\SA43_Team10A_LibraySystem Final\SA43_Team10A_LibrarySystem\bin\Debug\SA43_Team10A_LibrarySystem.pdb
+C:\Users\e0046686\Downloads\SA43_Team10A_LibraySystem Final\SA43_Team10A_LibrarySystem\bin\Debug\EntityFramework.dll
+C:\Users\e0046686\Downloads\SA43_Team10A_LibraySystem Final\SA43_Team10A_LibrarySystem\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\e0046686\Downloads\SA43_Team10A_LibraySystem Final\SA43_Team10A_LibrarySystem\bin\Debug\EntityFramework.xml
+C:\Users\e0046686\Downloads\SA43_Team10A_LibraySystem Final\SA43_Team10A_LibrarySystem\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\e0046686\Downloads\SA43_Team10A_LibraySystem Final\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.csprojResolveAssemblyReference.cache
+C:\Users\e0046686\Downloads\SA43_Team10A_LibraySystem Final\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.frmBorrow.resources
+C:\Users\e0046686\Downloads\SA43_Team10A_LibraySystem Final\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.frmLogin.resources
+C:\Users\e0046686\Downloads\SA43_Team10A_LibraySystem Final\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.frmBookMaintenance.resources
+C:\Users\e0046686\Downloads\SA43_Team10A_LibraySystem Final\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.frmMain.resources
+C:\Users\e0046686\Downloads\SA43_Team10A_LibraySystem Final\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.frmMemberMaintenance.resources
+C:\Users\e0046686\Downloads\SA43_Team10A_LibraySystem Final\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.frmMemberSearch.resources
+C:\Users\e0046686\Downloads\SA43_Team10A_LibraySystem Final\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.frmReportBookInfo.resources
+C:\Users\e0046686\Downloads\SA43_Team10A_LibraySystem Final\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.frmReportBorrowingBookInfo.resources
+C:\Users\e0046686\Downloads\SA43_Team10A_LibraySystem Final\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.frmReportPopularBook.resources
+C:\Users\e0046686\Downloads\SA43_Team10A_LibraySystem Final\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.frmReturn.resources
+C:\Users\e0046686\Downloads\SA43_Team10A_LibraySystem Final\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.frmSearch.resources
+C:\Users\e0046686\Downloads\SA43_Team10A_LibraySystem Final\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.Properties.Resources.resources
+C:\Users\e0046686\Downloads\SA43_Team10A_LibraySystem Final\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.csproj.GenerateResource.Cache
+C:\Users\e0046686\Downloads\SA43_Team10A_LibrarySystem Final\SA43_Team10A_LibrarySystem\bin\Debug\SA43_Team10A_LibrarySystem.exe.config
+C:\Users\e0046686\Downloads\SA43_Team10A_LibrarySystem Final\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.exe
+C:\Users\e0046686\Downloads\SA43_Team10A_LibrarySystem Final\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.pdb
+C:\Users\e0046686\Downloads\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\bin\Debug\SA43_Team10A_LibrarySystem.exe.config
+C:\Users\e0046686\Downloads\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.exe
+C:\Users\e0046686\Downloads\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.pdb
+C:\Users\e0046686\Downloads\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\bin\Debug\SA43_Team10A_LibrarySystem.exe
+C:\Users\e0046686\Downloads\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\bin\Debug\SA43_Team10A_LibrarySystem.pdb
+C:\Users\e0046686\Downloads\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\bin\Debug\EntityFramework.dll
+C:\Users\e0046686\Downloads\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\e0046686\Downloads\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\bin\Debug\EntityFramework.xml
+C:\Users\e0046686\Downloads\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\e0046686\Downloads\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.csprojResolveAssemblyReference.cache
+C:\Users\e0046686\Downloads\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.frmBorrow.resources
+C:\Users\e0046686\Downloads\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.frmLogin.resources
+C:\Users\e0046686\Downloads\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.frmBookMaintenance.resources
+C:\Users\e0046686\Downloads\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.frmMain.resources
+C:\Users\e0046686\Downloads\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.frmMemberMaintenance.resources
+C:\Users\e0046686\Downloads\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.frmMemberSearch.resources
+C:\Users\e0046686\Downloads\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.frmReportBookInfo.resources
+C:\Users\e0046686\Downloads\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.frmReportBorrowingBookInfo.resources
+C:\Users\e0046686\Downloads\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.frmReportPopularBook.resources
+C:\Users\e0046686\Downloads\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.frmReturn.resources
+C:\Users\e0046686\Downloads\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.frmSearch.resources
+C:\Users\e0046686\Downloads\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.Properties.Resources.resources
+C:\Users\e0046686\Downloads\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.csproj.GenerateResource.Cache
+D:\ISS-SA43\All Projects\All Projects\C#\SA43_Team10A_Library_System\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\bin\Debug\SA43_Team10A_LibrarySystem.exe.config
+D:\ISS-SA43\All Projects\All Projects\C#\SA43_Team10A_Library_System\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.exe
+D:\ISS-SA43\All Projects\All Projects\C#\SA43_Team10A_Library_System\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.pdb
+D:\ISS-SA43\All Projects\All Projects\C#\SA43_Team10A_Library_System\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\bin\Debug\SA43_Team10A_LibrarySystem.exe
+D:\ISS-SA43\All Projects\All Projects\C#\SA43_Team10A_Library_System\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\bin\Debug\SA43_Team10A_LibrarySystem.pdb
+D:\ISS-SA43\All Projects\All Projects\C#\SA43_Team10A_Library_System\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+D:\ISS-SA43\All Projects\All Projects\C#\SA43_Team10A_Library_System\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\bin\Debug\CrystalDecisions.ReportSource.dll
+D:\ISS-SA43\All Projects\All Projects\C#\SA43_Team10A_Library_System\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\bin\Debug\CrystalDecisions.Shared.dll
+D:\ISS-SA43\All Projects\All Projects\C#\SA43_Team10A_Library_System\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\bin\Debug\CrystalDecisions.Windows.Forms.dll
+D:\ISS-SA43\All Projects\All Projects\C#\SA43_Team10A_Library_System\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\bin\Debug\EntityFramework.dll
+D:\ISS-SA43\All Projects\All Projects\C#\SA43_Team10A_Library_System\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\bin\Debug\EntityFramework.SqlServer.dll
+D:\ISS-SA43\All Projects\All Projects\C#\SA43_Team10A_Library_System\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\bin\Debug\FlashControlV71.dll
+D:\ISS-SA43\All Projects\All Projects\C#\SA43_Team10A_Library_System\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+D:\ISS-SA43\All Projects\All Projects\C#\SA43_Team10A_Library_System\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+D:\ISS-SA43\All Projects\All Projects\C#\SA43_Team10A_Library_System\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+D:\ISS-SA43\All Projects\All Projects\C#\SA43_Team10A_Library_System\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+D:\ISS-SA43\All Projects\All Projects\C#\SA43_Team10A_Library_System\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+D:\ISS-SA43\All Projects\All Projects\C#\SA43_Team10A_Library_System\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+D:\ISS-SA43\All Projects\All Projects\C#\SA43_Team10A_Library_System\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+D:\ISS-SA43\All Projects\All Projects\C#\SA43_Team10A_Library_System\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+D:\ISS-SA43\All Projects\All Projects\C#\SA43_Team10A_Library_System\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+D:\ISS-SA43\All Projects\All Projects\C#\SA43_Team10A_Library_System\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+D:\ISS-SA43\All Projects\All Projects\C#\SA43_Team10A_Library_System\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+D:\ISS-SA43\All Projects\All Projects\C#\SA43_Team10A_Library_System\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\bin\Debug\ShockwaveFlashObjects.dll
+D:\ISS-SA43\All Projects\All Projects\C#\SA43_Team10A_Library_System\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+D:\ISS-SA43\All Projects\All Projects\C#\SA43_Team10A_Library_System\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\bin\Debug\stdole.dll
+D:\ISS-SA43\All Projects\All Projects\C#\SA43_Team10A_Library_System\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\bin\Debug\EntityFramework.xml
+D:\ISS-SA43\All Projects\All Projects\C#\SA43_Team10A_Library_System\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\bin\Debug\EntityFramework.SqlServer.xml
+D:\ISS-SA43\All Projects\All Projects\C#\SA43_Team10A_Library_System\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.csprojResolveAssemblyReference.cache
+D:\ISS-SA43\All Projects\All Projects\C#\SA43_Team10A_Library_System\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.frmBorrow.resources
+D:\ISS-SA43\All Projects\All Projects\C#\SA43_Team10A_Library_System\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.frmLogin.resources
+D:\ISS-SA43\All Projects\All Projects\C#\SA43_Team10A_Library_System\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.frmBookMaintenance.resources
+D:\ISS-SA43\All Projects\All Projects\C#\SA43_Team10A_Library_System\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.frmMain.resources
+D:\ISS-SA43\All Projects\All Projects\C#\SA43_Team10A_Library_System\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.frmMemberMaintenance.resources
+D:\ISS-SA43\All Projects\All Projects\C#\SA43_Team10A_Library_System\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.frmMemberSearch.resources
+D:\ISS-SA43\All Projects\All Projects\C#\SA43_Team10A_Library_System\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.frmReportBookInfo.resources
+D:\ISS-SA43\All Projects\All Projects\C#\SA43_Team10A_Library_System\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.frmReportBorrowingBookInfo.resources
+D:\ISS-SA43\All Projects\All Projects\C#\SA43_Team10A_Library_System\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.frmReportPopularBook.resources
+D:\ISS-SA43\All Projects\All Projects\C#\SA43_Team10A_Library_System\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.frmReturn.resources
+D:\ISS-SA43\All Projects\All Projects\C#\SA43_Team10A_Library_System\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.frmSearch.resources
+D:\ISS-SA43\All Projects\All Projects\C#\SA43_Team10A_Library_System\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.Properties.Resources.resources
+D:\ISS-SA43\All Projects\All Projects\C#\SA43_Team10A_Library_System\SA43_Team10A_Library_System\SA43_Team10A_LibrarySystem\obj\Debug\SA43_Team10A_LibrarySystem.csproj.GenerateResource.Cache

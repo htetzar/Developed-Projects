@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetBookInfo" targetNamespace="http://tempuri.org/DataSetBookInfo.xsd" xmlns:mstns="http://tempuri.org/DataSetBookInfo.xsd" xmlns="http://tempuri.org/DataSetBookInfo.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="SA43_Team10A_LibrarySystemConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SA43_Team10A_LibrarySystemConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SA43_Team10A_LibrarySystem.Properties.Settings.GlobalReference.Default.SA43_Team10A_LibrarySystemConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="BookInfoTableAdapter" GeneratorDataComponentClassName="BookInfoTableAdapter" Name="BookInfo" UserDataComponentName="BookInfoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SA43_Team10A_LibrarySystemConnectionString (Settings)" DbObjectName="SA43_Team10A_LibrarySystem.dbo.BookInfo" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT BookID, BookTitle, BookType, TotalStock FROM dbo.BookInfo</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="BookID" DataSetColumn="BookID" />
+              <Mapping SourceColumn="BookTitle" DataSetColumn="BookTitle" />
+              <Mapping SourceColumn="BookType" DataSetColumn="BookType" />
+              <Mapping SourceColumn="TotalStock" DataSetColumn="TotalStock" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="PopularbookTableAdapter" GeneratorDataComponentClassName="PopularbookTableAdapter" Name="Popularbook" UserDataComponentName="PopularbookTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SA43_Team10A_LibrarySystemConnectionString (Settings)" DbObjectName="SA43_Team10A_LibrarySystem.dbo.Popularbook" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT booktitle, booktype, Author FROM dbo.Popularbook</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="booktitle" DataSetColumn="booktitle" />
+              <Mapping SourceColumn="booktype" DataSetColumn="booktype" />
+              <Mapping SourceColumn="Author" DataSetColumn="Author" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ReceiptTableAdapter" GeneratorDataComponentClassName="ReceiptTableAdapter" Name="Receipt" UserDataComponentName="ReceiptTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SA43_Team10A_LibrarySystemConnectionString (Settings)" DbObjectName="SA43_Team10A_LibrarySystem.dbo.Receipt" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT MemberID, TransactionID, BookID, BookTitle, Author, BookType, DateIssue, DateDue FROM dbo.Receipt</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="MemberID" DataSetColumn="MemberID" />
+              <Mapping SourceColumn="TransactionID" DataSetColumn="TransactionID" />
+              <Mapping SourceColumn="BookID" DataSetColumn="BookID" />
+              <Mapping SourceColumn="BookTitle" DataSetColumn="BookTitle" />
+              <Mapping SourceColumn="Author" DataSetColumn="Author" />
+              <Mapping SourceColumn="BookType" DataSetColumn="BookType" />
+              <Mapping SourceColumn="DateIssue" DataSetColumn="DateIssue" />
+              <Mapping SourceColumn="DateDue" DataSetColumn="DateDue" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetBookInfo" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetBookInfo" msprop:Generator_UserDSName="DataSetBookInfo">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="BookInfo" msprop:Generator_TableClassName="BookInfoDataTable" msprop:Generator_TableVarName="tableBookInfo" msprop:Generator_RowChangedName="BookInfoRowChanged" msprop:Generator_TablePropName="BookInfo" msprop:Generator_RowDeletingName="BookInfoRowDeleting" msprop:Generator_RowChangingName="BookInfoRowChanging" msprop:Generator_RowEvHandlerName="BookInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="BookInfoRowDeleted" msprop:Generator_RowClassName="BookInfoRow" msprop:Generator_UserTableName="BookInfo" msprop:Generator_RowEvArgName="BookInfoRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BookID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnBookID" msprop:Generator_ColumnPropNameInRow="BookID" msprop:Generator_ColumnPropNameInTable="BookIDColumn" msprop:Generator_UserColumnName="BookID" type="xs:int" />
+              <xs:element name="BookTitle" msprop:Generator_ColumnVarNameInTable="columnBookTitle" msprop:Generator_ColumnPropNameInRow="BookTitle" msprop:Generator_ColumnPropNameInTable="BookTitleColumn" msprop:Generator_UserColumnName="BookTitle">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BookType" msprop:Generator_ColumnVarNameInTable="columnBookType" msprop:Generator_ColumnPropNameInRow="BookType" msprop:Generator_ColumnPropNameInTable="BookTypeColumn" msprop:Generator_UserColumnName="BookType" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TotalStock" msprop:Generator_ColumnVarNameInTable="columnTotalStock" msprop:Generator_ColumnPropNameInRow="TotalStock" msprop:Generator_ColumnPropNameInTable="TotalStockColumn" msprop:Generator_UserColumnName="TotalStock" type="xs:short" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Popularbook" msprop:Generator_TableClassName="PopularbookDataTable" msprop:Generator_TableVarName="tablePopularbook" msprop:Generator_RowChangedName="PopularbookRowChanged" msprop:Generator_TablePropName="Popularbook" msprop:Generator_RowDeletingName="PopularbookRowDeleting" msprop:Generator_RowChangingName="PopularbookRowChanging" msprop:Generator_RowEvHandlerName="PopularbookRowChangeEventHandler" msprop:Generator_RowDeletedName="PopularbookRowDeleted" msprop:Generator_RowClassName="PopularbookRow" msprop:Generator_UserTableName="Popularbook" msprop:Generator_RowEvArgName="PopularbookRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="booktitle" msprop:Generator_ColumnVarNameInTable="columnbooktitle" msprop:Generator_ColumnPropNameInRow="booktitle" msprop:Generator_ColumnPropNameInTable="booktitleColumn" msprop:Generator_UserColumnName="booktitle">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="booktype" msprop:Generator_ColumnVarNameInTable="columnbooktype" msprop:Generator_ColumnPropNameInRow="booktype" msprop:Generator_ColumnPropNameInTable="booktypeColumn" msprop:Generator_UserColumnName="booktype" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Author" msprop:Generator_ColumnVarNameInTable="columnAuthor" msprop:Generator_ColumnPropNameInRow="Author" msprop:Generator_ColumnPropNameInTable="AuthorColumn" msprop:Generator_UserColumnName="Author" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Receipt" msprop:Generator_TableClassName="ReceiptDataTable" msprop:Generator_TableVarName="tableReceipt" msprop:Generator_TablePropName="Receipt" msprop:Generator_RowDeletingName="ReceiptRowDeleting" msprop:Generator_RowChangingName="ReceiptRowChanging" msprop:Generator_RowEvHandlerName="ReceiptRowChangeEventHandler" msprop:Generator_RowDeletedName="ReceiptRowDeleted" msprop:Generator_UserTableName="Receipt" msprop:Generator_RowChangedName="ReceiptRowChanged" msprop:Generator_RowEvArgName="ReceiptRowChangeEvent" msprop:Generator_RowClassName="ReceiptRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MemberID" msprop:Generator_ColumnVarNameInTable="columnMemberID" msprop:Generator_ColumnPropNameInRow="MemberID" msprop:Generator_ColumnPropNameInTable="MemberIDColumn" msprop:Generator_UserColumnName="MemberID" type="xs:int" />
+              <xs:element name="TransactionID" msprop:Generator_ColumnVarNameInTable="columnTransactionID" msprop:Generator_ColumnPropNameInRow="TransactionID" msprop:Generator_ColumnPropNameInTable="TransactionIDColumn" msprop:Generator_UserColumnName="TransactionID" type="xs:int" />
+              <xs:element name="BookID" msprop:Generator_ColumnVarNameInTable="columnBookID" msprop:Generator_ColumnPropNameInRow="BookID" msprop:Generator_ColumnPropNameInTable="BookIDColumn" msprop:Generator_UserColumnName="BookID" type="xs:int" />
+              <xs:element name="BookTitle" msprop:Generator_ColumnVarNameInTable="columnBookTitle" msprop:Generator_ColumnPropNameInRow="BookTitle" msprop:Generator_ColumnPropNameInTable="BookTitleColumn" msprop:Generator_UserColumnName="BookTitle">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Author" msprop:Generator_ColumnVarNameInTable="columnAuthor" msprop:Generator_ColumnPropNameInRow="Author" msprop:Generator_ColumnPropNameInTable="AuthorColumn" msprop:Generator_UserColumnName="Author" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BookType" msprop:Generator_ColumnVarNameInTable="columnBookType" msprop:Generator_ColumnPropNameInRow="BookType" msprop:Generator_ColumnPropNameInTable="BookTypeColumn" msprop:Generator_UserColumnName="BookType" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DateIssue" msprop:Generator_ColumnVarNameInTable="columnDateIssue" msprop:Generator_ColumnPropNameInRow="DateIssue" msprop:Generator_ColumnPropNameInTable="DateIssueColumn" msprop:Generator_UserColumnName="DateIssue" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DateDue" msprop:Generator_ColumnVarNameInTable="columnDateDue" msprop:Generator_ColumnPropNameInRow="DateDue" msprop:Generator_ColumnPropNameInTable="DateDueColumn" msprop:Generator_UserColumnName="DateDue" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:BookInfo" />
+      <xs:field xpath="mstns:BookID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

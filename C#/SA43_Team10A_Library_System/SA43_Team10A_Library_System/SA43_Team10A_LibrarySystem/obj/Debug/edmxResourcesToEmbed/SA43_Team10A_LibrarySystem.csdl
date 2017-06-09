@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SA43_Team10A_LibrarySystemModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="BooksDetail">
+    <Key>
+      <PropertyRef Name="BookID" />
+    </Key>
+    <Property Name="BookID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BookTitle" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Author" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BookType" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="ISBN" Type="Int64" />
+    <Property Name="TotalStock" Type="Int16" />
+    <Property Name="NumberLoaned" Type="Int16" />
+    <NavigationProperty Name="LoanTransDetails" Relationship="Self.FK_BooksDetail_BookID" FromRole="BooksDetail" ToRole="LoanTransDetail" />
+  </EntityType>
+  <EntityType Name="EmpCredential">
+    <Key>
+      <PropertyRef Name="EmployeeID" />
+    </Key>
+    <Property Name="EmployeeID" Type="Int32" Nullable="false" />
+    <Property Name="EmployeeName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EmployeesDetail">
+    <Key>
+      <PropertyRef Name="EmployeeID" />
+    </Key>
+    <Property Name="EmployeeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmployeeName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Address" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="Birthdate" Type="DateTime" Precision="3" />
+    <Property Name="Title" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="PostalCode" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="LoanRecord">
+    <Key>
+      <PropertyRef Name="TransactionID" />
+    </Key>
+    <Property Name="TransactionID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MemberID" Type="Int32" Nullable="false" />
+    <Property Name="DateIssue" Type="DateTime" Precision="3" />
+    <Property Name="DateDue" Type="DateTime" Precision="3" />
+    <Property Name="Remarks" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="MembersDetail" Relationship="Self.FK__LoanRecor__Membe__182C9B23" FromRole="LoanRecords" ToRole="MembersDetail" />
+    <NavigationProperty Name="LoanTransDetails" Relationship="Self.FK_LoanRecords_TransactionID" FromRole="LoanRecords" ToRole="LoanTransDetail" />
+  </EntityType>
+  <EntityType Name="LoanTransDetail">
+    <Key>
+      <PropertyRef Name="TransactionID" />
+      <PropertyRef Name="BookID" />
+    </Key>
+    <Property Name="TransactionID" Type="Int32" Nullable="false" />
+    <Property Name="BookID" Type="Int32" Nullable="false" />
+    <Property Name="DateActualReturn" Type="DateTime" Precision="3" />
+    <Property Name="LoanStatus" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="BooksDetail" Relationship="Self.FK_BooksDetail_BookID" FromRole="LoanTransDetail" ToRole="BooksDetail" />
+    <NavigationProperty Name="LoanRecord" Relationship="Self.FK_LoanRecords_TransactionID" FromRole="LoanTransDetail" ToRole="LoanRecords" />
+  </EntityType>
+  <EntityType Name="MembersDetail">
+    <Key>
+      <PropertyRef Name="MemberID" />
+    </Key>
+    <Property Name="MemberID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MemberName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Address" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="Birthdate" Type="DateTime" Precision="3" />
+    <Property Name="EmailAddress" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="PostalCode" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="LoanRecords" Relationship="Self.FK__LoanRecor__Membe__182C9B23" FromRole="MembersDetail" ToRole="LoanRecords" />
+  </EntityType>
+  <Association Name="FK_BooksDetail_BookID">
+    <End Role="BooksDetail" Type="Self.BooksDetail" Multiplicity="1" />
+    <End Role="LoanTransDetail" Type="Self.LoanTransDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BooksDetail">
+        <PropertyRef Name="BookID" />
+      </Principal>
+      <Dependent Role="LoanTransDetail">
+        <PropertyRef Name="BookID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__LoanRecor__Membe__182C9B23">
+    <End Role="MembersDetail" Type="Self.MembersDetail" Multiplicity="1" />
+    <End Role="LoanRecords" Type="Self.LoanRecord" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MembersDetail">
+        <PropertyRef Name="MemberID" />
+      </Principal>
+      <Dependent Role="LoanRecords">
+        <PropertyRef Name="MemberID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LoanRecords_TransactionID">
+    <End Role="LoanRecords" Type="Self.LoanRecord" Multiplicity="1" />
+    <End Role="LoanTransDetail" Type="Self.LoanTransDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LoanRecords">
+        <PropertyRef Name="TransactionID" />
+      </Principal>
+      <Dependent Role="LoanTransDetail">
+        <PropertyRef Name="TransactionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SA43_Team10A_LibrarySystemEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="BooksDetails" EntityType="Self.BooksDetail" />
+    <EntitySet Name="EmpCredentials" EntityType="Self.EmpCredential" />
+    <EntitySet Name="EmployeesDetails" EntityType="Self.EmployeesDetail" />
+    <EntitySet Name="LoanRecords" EntityType="Self.LoanRecord" />
+    <EntitySet Name="LoanTransDetails" EntityType="Self.LoanTransDetail" />
+    <EntitySet Name="MembersDetails" EntityType="Self.MembersDetail" />
+    <AssociationSet Name="FK_BooksDetail_BookID" Association="Self.FK_BooksDetail_BookID">
+      <End Role="BooksDetail" EntitySet="BooksDetails" />
+      <End Role="LoanTransDetail" EntitySet="LoanTransDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__LoanRecor__Membe__182C9B23" Association="Self.FK__LoanRecor__Membe__182C9B23">
+      <End Role="MembersDetail" EntitySet="MembersDetails" />
+      <End Role="LoanRecords" EntitySet="LoanRecords" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LoanRecords_TransactionID" Association="Self.FK_LoanRecords_TransactionID">
+      <End Role="LoanRecords" EntitySet="LoanRecords" />
+      <End Role="LoanTransDetail" EntitySet="LoanTransDetails" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
