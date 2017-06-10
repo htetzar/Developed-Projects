@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Models" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Playlist">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TotalDuration" Type="Time" Nullable="false" Precision="7" />
+    <NavigationProperty Name="Videos" Relationship="Self.PlaylistVideo" FromRole="Playlists" ToRole="Videos" />
+  </EntityType>
+  <EntityType Name="Video">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Duration" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="Size" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="FileName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Playlists" Relationship="Self.PlaylistVideo" FromRole="Videos" ToRole="Playlists" />
+  </EntityType>
+  <Association Name="PlaylistVideo">
+    <End Role="Playlists" Type="Self.Playlist" Multiplicity="*" />
+    <End Role="Videos" Type="Self.Video" Multiplicity="*" />
+  </Association>
+  <EntityContainer Name="SignageContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Playlists" EntityType="Self.Playlist" />
+    <EntitySet Name="Videos" EntityType="Self.Video" />
+    <AssociationSet Name="PlaylistVideo" Association="Self.PlaylistVideo">
+      <End Role="Playlists" EntitySet="Playlists" />
+      <End Role="Videos" EntitySet="Videos" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Models.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Playlists">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="TotalDuration" Type="time" Precision="7" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PlaylistVideo">
+    <Key>
+      <PropertyRef Name="Playlists_Id" />
+      <PropertyRef Name="Videos_Id" />
+    </Key>
+    <Property Name="Playlists_Id" Type="int" Nullable="false" />
+    <Property Name="Videos_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Videos">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Duration" Type="time" Precision="7" Nullable="false" />
+    <Property Name="Size" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="FileName" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_PlaylistVideo_Playlist">
+    <End Role="Playlists" Type="Self.Playlists" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="PlaylistVideo" Type="Self.PlaylistVideo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Playlists">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PlaylistVideo">
+        <PropertyRef Name="Playlists_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PlaylistVideo_Video">
+    <End Role="Videos" Type="Self.Videos" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="PlaylistVideo" Type="Self.PlaylistVideo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Videos">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PlaylistVideo">
+        <PropertyRef Name="Videos_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ModelsStoreContainer">
+    <EntitySet Name="Playlists" EntityType="Self.Playlists" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PlaylistVideo" EntityType="Self.PlaylistVideo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Videos" EntityType="Self.Videos" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_PlaylistVideo_Playlist" Association="Self.FK_PlaylistVideo_Playlist">
+      <End Role="Playlists" EntitySet="Playlists" />
+      <End Role="PlaylistVideo" EntitySet="PlaylistVideo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PlaylistVideo_Video" Association="Self.FK_PlaylistVideo_Video">
+      <End Role="Videos" EntitySet="Videos" />
+      <End Role="PlaylistVideo" EntitySet="PlaylistVideo" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
