@@ -1,0 +1,642 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="GuestMasterPage.master.cs" Inherits="GuestMasterPage" %>
+
+<%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="asp" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type"  content ="text/html;charset=Shift_JIS" />
+    <title>Master Page</title>
+      <link rel="shortcut icon" href="App_Themes/Theme1/icon.png" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta name="viiewport" content ="width=1024" />
+    <meta http-equiv="content-style-type" content="text/css" />
+    <meta http-equiv="content-script-type"content="text/javascript" />
+    <meta http-equiv="content-language" content="jp" />
+    <meta name="robots" content="index,follow" />
+    <meta name="keywords" content="Online IT Society" />
+    <meta name="description" content=" one of the best selling in myanmar" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+     <link type="text/css" href="menu/menu.css" rel="stylesheet" />
+      <link type="text/css" href="App_Themes/FooterCss.css" rel="stylesheet" />
+	<script type="text/javascript" src="menu/jquery.js"></script>
+	<script type="text/javascript" src="menu/menu.js"></script>
+	<link rel="stylesheet" href="membermenu/style.css" type="text/css" media="screen"/>
+    <style type="text/css">
+           #banner
+           {
+                margin-top:0px auto;
+           }
+        .style1
+        {
+            height: 47px;
+        }
+        .style2
+        {
+            width: 14px;
+        }
+    </style>
+
+    <script src="Banner/sliderengine/amazingslider.js" type="text/javascript"></script>
+    <script src="Banner/sliderengine/initslider-1.js" type="text/javascript"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="banner">
+         <div id="amazingslider-1">
+                <ul class="amazingslider-slides">
+                   <li><img src="Banner/images/OITS5-01.jpg" alt="bannergold" /></li>
+                     <li><img src="Banner/images/OITS3-01.jpg" alt="bannergreen" /></li>
+                    <li><img src="Banner/images/OITS1-01-01-01.jpg" alt="bannerocean" /></li>
+                    <li><img src="Banner/images/OITS4-01.jpg" alt="bannerpurple" /></li>
+                </ul>
+                 <div class="amazingslider-engine"><a href="http://amazingslider.com"></a></div>
+            </div>
+    </div>
+    <div id="menu" class="menu">
+            <ul class="menu">
+      
+            <li><a href="Home.aspx" class="parent"><span>Home</span></a></li>
+                <li><a href="Register.aspx" class="parent"><span>Register</span></a>
+                </li>
+                <li><a href="#"  class="parent"><span>Advertisements</span></a>
+                		 <div class="sub_menu"><ul>
+                        <li><a href="ForSale.aspx"><span>For Sale Items</span></a></li>
+                        <li><a href="JobVacancy.aspx"><span>Job Vacancy</span></a></li>
+                           <li><a href="ViewCV.aspx"><span>View CV</span></a></li>
+                        <li><a href="Trainings.aspx"><span>Trainings</span></a></li>
+                           <li><a href="SaleandService.aspx"><span>Sales&amp;ServciesCenter</span></a></li>
+                        <li><a href="Seminar.aspx"><span>Seminar</span></a></li>
+                        <li><a href="Exhibition.aspx"><span>Exhibition/WS</span></a></li>
+                       </ul></div>
+                </li>
+                <li><a href="#"  class="parent"><span>Forum</span></a>
+                	   <div class="sub_menu"><ul>
+                                <li><a href="QuesAndAns.aspx"><span>Ques &amp; Ans</span></a></li>
+                               <%--<li><a href="ChatRoom.aspx"><span>Chat Room</span></a></li>--%>
+                            </ul></div>
+                </li>
+                <li><a href="#"  class="parent"><span>Free Download</span></a>
+                	  <div class="sub_menu"><ul>
+                                <li><a href="Ebook.aspx"><span>EBooks</span></a></li>
+                                <li><a href="Software.aspx"><span>Software</span></a></li>
+                            </ul></div>
+                </li>
+                  <li><a href="News.aspx" class="parent"><span>News</span></a></li>
+                <li><a href="AboutUs.aspx"  class="parent"><span>About us</span></a></li>
+                <asp:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
+                </asp:ToolkitScriptManager>
+             </ul>
+             </div>
+<div id="copyright"> <a href="http://apycom.com/"></a></div>
+      <table style="width: 100%; height:674px; background-image:url('App_Themes/Theme1/BG.jpg');">
+      <tr>
+       <td colspan="3"> 
+                <asp:SiteMapPath ID="SiteMapPath1" runat="server" Font-Names="Verdana" 
+                    Font-Size="0.8em" PathSeparator=" : ">
+                    <PathSeparatorStyle Font-Bold="True" ForeColor="#1C5E55" />
+                    <CurrentNodeStyle ForeColor="#333333" />
+                    <NodeStyle Font-Bold="True" ForeColor="#666666" />
+                    <RootNodeStyle Font-Bold="True" ForeColor="#1C5E55" />
+                </asp:SiteMapPath>
+            </td>
+      </tr>
+          <tr>
+              <td width="20%" style=" vertical-align:top; padding-top:50px; font-size: small;">
+              <fieldset>
+              <legend>Login</legend>
+                        <table style="width: 100%; text-align: left; height: 152px;">
+    <tr>
+        <td width="50px;">
+            Email</td>
+        <td width="50px;">
+            <asp:TextBox ID="txtemail" runat="server" ValidationGroup="login" Width="120px"></asp:TextBox>
+        </td>
+        <td class="style2">
+            <asp:RequiredFieldValidator ID="RequiredFieldValidatorLoginE" runat="server" 
+                ControlToValidate="txtemail" ErrorMessage="Required" 
+                ValidationGroup="login">*</asp:RequiredFieldValidator>
+            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" 
+                ErrorMessage="Invalid Email" ControlToValidate="txtemail" 
+                ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*">*</asp:RegularExpressionValidator>
+        </td>
+    </tr>
+    <tr>
+        <td width="50px;">
+            Password</td>
+        <td width="50px;">
+            <asp:TextBox ID="txtpwd" runat="server" TextMode="Password" 
+                ValidationGroup="login" Width="120px"></asp:TextBox>
+        </td>
+        <td class="style2">
+            <asp:RequiredFieldValidator ID="RequiredFieldValidatorLoginP" runat="server" 
+                ControlToValidate="txtpwd" ErrorMessage="Required" ValidationGroup="login">*</asp:RequiredFieldValidator>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            </td>
+        <td align="left">
+            <asp:SqlDataSource ID="memDS" runat="server" 
+                ConnectionString="<%$ ConnectionStrings:ITSocietyDBConnectionString %>" 
+                SelectCommand="SELECT [email] FROM [Member] WHERE ([email] = @email)">
+                <SelectParameters>
+                    <asp:ControlParameter ControlID="txtemail" Name="email" PropertyName="Text" 
+                        Type="String" />
+                </SelectParameters>
+            </asp:SqlDataSource>
+            <asp:SqlDataSource ID="memValidDS" runat="server" 
+                ConnectionString="<%$ ConnectionStrings:ITSocietyDBConnectionString1 %>" 
+                
+                SelectCommand="SELECT email, password, username, memberID FROM Member WHERE (email = @email) AND (password = @password)">
+                <SelectParameters>
+                    <asp:ControlParameter ControlID="txtemail" Name="email" PropertyName="Text" 
+                        Type="String" />
+                    <asp:ControlParameter ControlID="txtpwd" Name="password" PropertyName="Text" 
+                        Type="String" />
+                </SelectParameters>
+            </asp:SqlDataSource>
+            <asp:SqlDataSource ID="trainerDS" runat="server" 
+                ConnectionString="<%$ ConnectionStrings:ITSocietyDBConnectionString %>" 
+                SelectCommand="SELECT [email] FROM [Trainer] WHERE ([email] = @email)">
+                <SelectParameters>
+                    <asp:ControlParameter ControlID="txtemail" Name="email" PropertyName="Text" 
+                        Type="String" />
+                </SelectParameters>
+            </asp:SqlDataSource>
+            <asp:SqlDataSource ID="trainerValidDS" runat="server" 
+                ConnectionString="<%$ ConnectionStrings:ITSocietyDBConnectionString %>" 
+                
+                SelectCommand="SELECT [email], [password] FROM [Trainer] WHERE (([email] = @email) AND ([password] = @password))">
+                <SelectParameters>
+                    <asp:ControlParameter ControlID="txtemail" Name="email" PropertyName="Text" 
+                        Type="String" />
+                    <asp:ControlParameter ControlID="txtpwd" Name="password" PropertyName="Text" 
+                        Type="String" />
+                </SelectParameters>
+            </asp:SqlDataSource>
+        </td>
+        <td class="style2">
+        </td>
+    </tr>
+    <tr>
+        <td align="center" colspan="3" align="center" class="style1">
+            &nbsp;&nbsp; <asp:Button ID="btnLogin" runat="server" Height="28px" onclick="btnLogin_Click" 
+                Text="Login" Width="64px" ValidationGroup="login" />
+            &nbsp;<asp:Button ID="btnCancel" runat="server" Height="28px" Text="Cancel" 
+                Width="64px" />
+                <br />
+            &nbsp;<asp:Label ID="lblmsg" runat="server" ForeColor="Red"></asp:Label>
+        </td>
+    </tr>
+    <tr>
+        <td  align="center" colspan="3">
+            <asp:HyperLink ID="HyperLink1" runat="server" 
+                NavigateUrl="~/RequestTrainer.aspx" Font-Bold="True" Font-Size="Large">Request 
+            Trainer?</asp:HyperLink></td>
+    </tr>
+</table>
+</fieldset>
+
+                <br /><br />
+                  <asp:SqlDataSource ID="DELabove2wksItemDS" runat="server" 
+                      ConnectionString="<%$ ConnectionStrings:ITSocietyDBConnectionString2 %>" 
+                      DeleteCommand="DELETE FROM Item WHERE (status = @status) AND (DATEDIFF(dd, postedDate, GETDATE()) &gt; 14)" 
+                      InsertCommand="INSERT INTO [Item] ([itemID], [memberID], [brandID], [model], [title], [price], [phone], [email], [photo], [address], [region], [description], [postedDate], [status], [purchaseDate]) VALUES (@itemID, @memberID, @brandID, @model, @title, @price, @phone, @email, @photo, @address, @region, @description, @postedDate, @status, @purchaseDate)" 
+                      SelectCommand="SELECT itemID, memberID, brandID, model, title, price, phone, email, photo, address, region, description, postedDate, status, purchaseDate FROM Item WHERE (status = @status) AND (DATEDIFF(dd, postedDate, GETDATE()) &gt; 14)" 
+                      UpdateCommand="UPDATE [Item] SET [memberID] = @memberID, [brandID] = @brandID, [model] = @model, [title] = @title, [price] = @price, [phone] = @phone, [email] = @email, [photo] = @photo, [address] = @address, [region] = @region, [description] = @description, [postedDate] = @postedDate, [status] = @status, [purchaseDate] = @purchaseDate WHERE [itemID] = @itemID">
+                      <SelectParameters>
+                          <asp:Parameter DefaultValue="False" Name="status" />
+                      </SelectParameters>
+                      <DeleteParameters>
+                          <asp:Parameter DefaultValue="False" Name="status" />
+                      </DeleteParameters>
+                      <UpdateParameters>
+                          <asp:Parameter Name="memberID" Type="Int32" />
+                          <asp:Parameter Name="brandID" Type="Int32" />
+                          <asp:Parameter Name="model" Type="String" />
+                          <asp:Parameter Name="title" Type="String" />
+                          <asp:Parameter Name="price" Type="Decimal" />
+                          <asp:Parameter Name="phone" Type="String" />
+                          <asp:Parameter Name="email" Type="String" />
+                          <asp:Parameter Name="photo" Type="Object" />
+                          <asp:Parameter Name="address" Type="String" />
+                          <asp:Parameter Name="region" Type="String" />
+                          <asp:Parameter Name="description" Type="String" />
+                          <asp:Parameter DbType="Date" Name="postedDate" />
+                          <asp:Parameter Name="status" Type="Boolean" />
+                          <asp:Parameter DbType="Date" Name="purchaseDate" />
+                          <asp:Parameter Name="itemID" Type="Int32" />
+                      </UpdateParameters>
+                      <InsertParameters>
+                          <asp:Parameter Name="itemID" Type="Int32" />
+                          <asp:Parameter Name="memberID" Type="Int32" />
+                          <asp:Parameter Name="brandID" Type="Int32" />
+                          <asp:Parameter Name="model" Type="String" />
+                          <asp:Parameter Name="title" Type="String" />
+                          <asp:Parameter Name="price" Type="Decimal" />
+                          <asp:Parameter Name="phone" Type="String" />
+                          <asp:Parameter Name="email" Type="String" />
+                          <asp:Parameter Name="photo" Type="Object" />
+                          <asp:Parameter Name="address" Type="String" />
+                          <asp:Parameter Name="region" Type="String" />
+                          <asp:Parameter Name="description" Type="String" />
+                          <asp:Parameter DbType="Date" Name="postedDate" />
+                          <asp:Parameter Name="status" Type="Boolean" />
+                          <asp:Parameter DbType="Date" Name="purchaseDate" />
+                      </InsertParameters>
+                  </asp:SqlDataSource>
+                  <br />
+                <fieldset>
+                    <legend>Advance Search For</legend>
+                    <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                        <ContentTemplate>
+                            <asp:DropDownList ID="DropDownList1" runat="server" 
+    AutoPostBack="True" onselectedindexchanged="DropDownList1_SelectedIndexChanged">
+                                <asp:ListItem Value="0">&lt;Select Category&gt;</asp:ListItem>
+                                <asp:ListItem Value="fs">For Sale</asp:ListItem>
+                                <asp:ListItem Value="jv">Job Vacancy</asp:ListItem>
+                                <asp:ListItem Value="cv">View CV</asp:ListItem>
+                                <asp:ListItem Value="tra">Trainings</asp:ListItem>
+                                <asp:ListItem Value="ss">Sale and Service</asp:ListItem>
+                                <asp:ListItem Value="eb">Ebook</asp:ListItem>
+                                <asp:ListItem Value="sw">Software</asp:ListItem>
+                            </asp:DropDownList>
+                            <br />
+                            <br />
+                            <asp:Panel ID="PanelForSale" runat="server" Visible="False">
+                                <table style="width:100%;">
+                                    <tr>
+                                        <td>
+                                            Sale Category:</td>
+                                        <td>
+                                            <asp:DropDownList ID="ddlSaleCategory" runat="server" 
+                                                DataSourceID="SqlDataSource1" DataTextField="saleCategoryName" 
+                                                DataValueField="saleCategoryID" Height="20px" Width="120px" 
+                                                AutoPostBack="True">
+                                            </asp:DropDownList>
+                                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
+                                                ConnectionString="<%$ ConnectionStrings:ITSocietyDBConnectionString %>" 
+                                                SelectCommand="SELECT [saleCategoryName], [saleCategoryID] FROM [SaleCategory]">
+                                            </asp:SqlDataSource>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Brand:</td>
+                                        <td>
+                                            <asp:DropDownList ID="ddlBrand" runat="server" DataSourceID="SqlDataSource2" 
+                                                DataTextField="brandName" DataValueField="brandID" Height="20px" 
+                                                Width="120px">
+                                            </asp:DropDownList>
+                                            <asp:SqlDataSource ID="SqlDataSource2" runat="server" 
+                                                ConnectionString="<%$ ConnectionStrings:ITSocietyDBConnectionString %>" 
+                                                SelectCommand="SELECT [brandName], [brandID] FROM [Brand] WHERE ([saleCategoryID] = @saleCategoryID)">
+                                                <SelectParameters>
+                                                    <asp:ControlParameter ControlID="ddlSaleCategory" Name="saleCategoryID" 
+                                                        PropertyName="SelectedValue" Type="Int32" />
+                                                </SelectParameters>
+                                            </asp:SqlDataSource>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Min Price:</td>
+                                        <td>
+                                            <asp:TextBox ID="txtMinPrice" runat="server" Width="100px" AutoPostBack="True" 
+                                                ontextchanged="txtMinPrice_TextChanged"></asp:TextBox>
+                                            <asp:RequiredFieldValidator ID="RequiredFieldValidatorMinPrice" runat="server" 
+                                                ControlToValidate="txtMinPrice" ErrorMessage="*" 
+                                                ToolTip="Min Price is required"></asp:RequiredFieldValidator>
+                                            <asp:RangeValidator ID="RangeValidatorMinPrice" runat="server" 
+                                                ControlToValidate="txtMinPrice" ErrorMessage="*" MaximumValue="999999999" 
+                                                MinimumValue="0" ToolTip="Must be Integer" Type="Integer"></asp:RangeValidator>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Max Price:</td>
+                                        <td>
+                                            <asp:TextBox ID="txtMaxPrice" runat="server" Width="100px" AutoPostBack="True" 
+                                                ontextchanged="txtMaxPrice_TextChanged"></asp:TextBox>
+                                            <asp:RequiredFieldValidator ID="RequiredFieldValidatorMaxPrice" runat="server" 
+                                                ControlToValidate="txtMaxPrice" ErrorMessage="*" 
+                                                ToolTip="Max Price is required"></asp:RequiredFieldValidator>
+                                            <asp:RangeValidator ID="RangeValidatorMaxPrice" runat="server" 
+                                                ControlToValidate="txtMaxPrice" ErrorMessage="*" MaximumValue="99999999" 
+                                                MinimumValue="0" ToolTip="Must be integer" Type="Integer"></asp:RangeValidator>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Region:</td>
+                                        <td>
+                                            <asp:DropDownList ID="ddlRegion" runat="server">
+                                            <asp:ListItem>Yangon</asp:ListItem>
+                                                    <asp:ListItem>Mandalay</asp:ListItem>
+                                                    <asp:ListItem>BaGo</asp:ListItem>
+                                                    <asp:ListItem>MaGway</asp:ListItem>
+                                                    <asp:ListItem>SitGaing</asp:ListItem>
+                                                    <asp:ListItem>TaHninThaYi</asp:ListItem>
+                                                    <asp:ListItem>Ayeyarwady</asp:ListItem>
+                                                    <asp:ListItem>KaChin State</asp:ListItem>
+                                                    <asp:ListItem>KaYah State</asp:ListItem>
+                                                    <asp:ListItem>KaYin State</asp:ListItem>
+                                                    <asp:ListItem>Chinn State</asp:ListItem>
+                                                    <asp:ListItem>Mon State</asp:ListItem>
+                                                    <asp:ListItem>YaKhine State</asp:ListItem>
+                                                    <asp:ListItem>Shann State</asp:ListItem>
+                                            </asp:DropDownList>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" class="style4" colspan="2">
+                                            <asp:Button ID="btnSearchForSale" runat="server" Text="Search" 
+                                                onclick="btnSearchForSale_Click" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </asp:Panel>
+                            <br />
+                            <asp:Panel ID="PanelJobVacancy" runat="server" Visible="False" 
+                                >
+                                <table style="width:101%; height: 93px;">
+                                    <tr>
+                                        <td>
+                                            Job Category:</td>
+                                        <td>
+                                            <asp:DropDownList ID="ddlJobCategory" runat="server">
+                                            <asp:ListItem>Web Programmer</asp:ListItem>
+                                            <asp:ListItem>Training Teacher</asp:ListItem>
+                                            <asp:ListItem>Network Engineer</asp:ListItem>
+                                            <asp:ListItem>System Ananlyst</asp:ListItem>
+                                            <asp:ListItem>Graphic Designer</asp:ListItem>
+                                            <asp:ListItem>Test Engineer</asp:ListItem>
+                                            <asp:ListItem>Database Administrator</asp:ListItem>
+                                            <asp:ListItem>Team Leader</asp:ListItem>
+                                            <asp:ListItem>Project Manager</asp:ListItem>
+                                            <asp:ListItem>Hardware Technician</asp:ListItem>
+                                            </asp:DropDownList>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Min Salary:</td>
+                                        <td>
+                                            <asp:TextBox ID="txtMinSalary" runat="server" Width="100px" AutoPostBack="True" 
+                                                ontextchanged="txtMinSalary_TextChanged"></asp:TextBox>
+                                            <asp:RequiredFieldValidator ID="RequiredFieldValidatorMinSal" runat="server" 
+                                                ControlToValidate="txtMinSalary" ErrorMessage="*" 
+                                                ToolTip="Min Salary is requied"></asp:RequiredFieldValidator>
+                                            <asp:RangeValidator ID="RangeValidatorMinSal" runat="server" 
+                                                ControlToValidate="txtMinSalary" ErrorMessage="*" MaximumValue="99999999" 
+                                                MinimumValue="0" ToolTip="Must be integer" Type="Integer"></asp:RangeValidator>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Max Salary:</td>
+                                        <td>
+                                            <asp:TextBox ID="txtMaxSalary" runat="server" Width="100px" AutoPostBack="True" 
+                                                ontextchanged="txtMaxSalary_TextChanged"></asp:TextBox>
+                                            <asp:RequiredFieldValidator ID="RequiredFieldValidatorMaxSal" runat="server" 
+                                                ControlToValidate="txtMaxSalary" ErrorMessage="*" 
+                                                ToolTip="Max Salary is required"></asp:RequiredFieldValidator>
+                                            <asp:RangeValidator ID="RangeValidatorMaxSal" runat="server" 
+                                                ControlToValidate="txtMaxSalary" ErrorMessage="*" MaximumValue="99999999" 
+                                                MinimumValue="0" ToolTip="Must be integer" Type="Integer"></asp:RangeValidator>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" colspan="2">
+                                            <asp:Button ID="btnSearchJobVacancy" runat="server" Text="Search" 
+                                                onclick="btnSearchJobVacancy_Click" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </asp:Panel>
+                            <asp:Panel ID="PanelCV" runat="server" style="margin-right: 0px" 
+                                Visible="False">
+                                <table style="width:100%;">
+                                    <tr>
+                                        <td>
+                                            Min Age:</td>
+                                        <td>
+                                            <asp:TextBox ID="txtMinAge" runat="server" AutoPostBack="True" 
+                                                ontextchanged="txtMinAge_TextChanged" Width="100px"></asp:TextBox>
+                                            <asp:RequiredFieldValidator ID="RequiredFieldValidatorMinAge" runat="server" 
+                                                ControlToValidate="txtMinAge" ErrorMessage="*" 
+                                                ToolTip="Min Age is required"></asp:RequiredFieldValidator>
+                                            <asp:RangeValidator ID="RangeValidatorMinAge" runat="server" 
+                                                ControlToValidate="txtMinAge" ErrorMessage="*" MaximumValue="100" 
+                                                MinimumValue="0" ToolTip="Must be integer" Type="Integer"></asp:RangeValidator>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Max Age:</td>
+                                        <td>
+                                            <asp:TextBox ID="txtMaxAge" runat="server" Width="100px" AutoPostBack="True"></asp:TextBox>
+                                            <asp:RequiredFieldValidator ID="RequiredFieldValidatorMaxAge" runat="server" 
+                                                ControlToValidate="txtMaxAge" ErrorMessage="*" 
+                                                ToolTip="Max Age is required"></asp:RequiredFieldValidator>
+                                            <asp:RangeValidator ID="RangeValidatorMaxAge" runat="server" 
+                                                ControlToValidate="txtMaxAge" ErrorMessage="*" MaximumValue="100" 
+                                                MinimumValue="0" ToolTip="Must be integer" Type="Integer"></asp:RangeValidator>
+                                        </td>
+                                        <tr>
+                                        <td>
+                                            Qualification:</td>
+                                        <td>
+                                            <asp:TextBox ID="txtQualification" runat="server" Width="100px"></asp:TextBox>
+                                            <asp:RequiredFieldValidator ID="RequiredFieldValidatorQuali" runat="server" 
+                                                ControlToValidate="txtQualification" ErrorMessage="*" 
+                                                ToolTip="Qualification is required"></asp:RequiredFieldValidator>
+                                        </td>
+                                        </tr>
+                                        
+                                    <tr>
+                                        <td>
+                                            &nbsp;</td>
+                                        <td>
+                                            <asp:Button ID="btnSearchCV" runat="server" onclick="btnSearchCV_Click" 
+                                                Text="Search" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </asp:Panel>
+                            <asp:Panel ID="PanelTra" runat="server" Visible="False" Width="213px">
+                                <table style="width:99%;">
+                                    <tr>
+                                        <td>
+                                            Training Name</td>
+                                        <td>
+                                            <asp:TextBox ID="txtTrainingName" runat="server" Width="100px"></asp:TextBox>
+                                            <asp:RequiredFieldValidator ID="RequiredFieldValidatorCName" runat="server" 
+                                                ControlToValidate="txtTrainingName" ErrorMessage="*" 
+                                                ToolTip="Training Name is required"></asp:RequiredFieldValidator>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            &nbsp;</td>
+                                        <td>
+                                            <asp:Button ID="btnSearchTraining" runat="server" Text="Search" 
+                                                onclick="btnSearchTraining_Click" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </asp:Panel>
+                            <asp:Panel ID="PanelSS" runat="server" Visible="False">
+                            
+                                <table style="width:100%;">
+                                    <tr>
+                                        <td>
+                                            Center Name</td>
+                                        <td>
+                                            <asp:TextBox ID="txtCenterName" runat="server" Width="100px"></asp:TextBox>
+                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" 
+                                                ControlToValidate="txtCenterName" ErrorMessage="*" 
+                                                ToolTip="Center Name is required"></asp:RequiredFieldValidator>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Type</td>
+                                        <td>
+                                            <asp:DropDownList ID="ddlType" runat="server" Width="101px">
+                                                <asp:ListItem>Sale</asp:ListItem>
+                                                <asp:ListItem>Service</asp:ListItem>
+                                                <asp:ListItem>Sale,Service</asp:ListItem>
+                                            </asp:DropDownList>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            &nbsp;</td>
+                                        <td>
+                                            <asp:Button ID="btnSearchSS" runat="server" Text="Search" 
+                                                onclick="btnSearchSS_Click" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            
+                            </asp:Panel>
+                            <asp:Panel ID="PanelEbook" runat="server" Visible="False">
+                                <table style="width: 100%;">
+                                    <tr>
+                                        <td>
+                                            Book Title</td>
+                                        <td>
+                                            
+                                            <asp:TextBox ID="txtBookTitle" runat="server" Width="100px" Height="22px"></asp:TextBox>
+                                            <asp:RequiredFieldValidator ID="RequiredFieldValidatorBTitle" runat="server" 
+                                                ControlToValidate="txtBookTitle" ErrorMessage="*" 
+                                                ToolTip="Title is required"></asp:RequiredFieldValidator>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            &nbsp;
+                                        </td>
+                                        <td>
+                                            <asp:Button ID="btnSearchEbook" runat="server" Text="Search" 
+                                                onclick="btnSearchEbook_Click" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </asp:Panel>
+                            <asp:Panel ID="PanelSW" runat="server" Visible="False">
+                                <table style="width: 100%;">
+                                    <tr>
+                                        <td>
+                                            Software Title</td>
+                                        <td>
+                                            
+                                            <asp:TextBox ID="txtSW" runat="server" style="height: 22px" Width="100px" 
+                                                Height="16px"></asp:TextBox>
+                                            <asp:RequiredFieldValidator ID="RequiredFieldValidatorSTitle" runat="server" 
+                                                ControlToValidate="txtSW" ErrorMessage="*" ToolTip="Title is requried"></asp:RequiredFieldValidator>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            <asp:Button ID="btnSearchSW" runat="server" Text="Search" 
+                                                onclick="btnSearchSW_Click" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </asp:Panel>
+                        </ContentTemplate>
+                    </asp:UpdatePanel>
+                    
+                    </fieldset>
+                 
+              </td>
+              <td style="padding-top:30px;" valign="top">
+                    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+              </td>
+              <td width="10%" valign="top" style=" font-size: small;">
+              
+               </td>
+          </tr>
+          <tr>
+            <td colspan="3">
+         <table style="width:980px;">
+     
+      <tr>
+            <td colspan="3" style="height:30px; border-top:solid 1px silver;">
+            <div class="foot">
+                <table style="width: auto;" align="center">
+                            <tr align="center">
+                                <td>
+                                    <a href="ForSale.aspx">For Sale Items</a>                         
+                                     &nbsp;|
+                                    <a href="JobVacancy.aspx">Job Vacancy</a>
+                                    &nbsp;|
+                                    <a href="ViewCV.aspx">View CV</a>
+                                    &nbsp;|
+                                    <a href="Trainings.aspx">Training Centers</a>
+                                    &nbsp;|
+                                    <a href="SaleandService.aspx">Sales And Services Center</a>
+                                </td>
+                            </tr>
+                            <tr align="center">
+                                <td>
+                                    <a href="Home.aspx">Home</a>
+                                    &nbsp;|
+                                    <a href="News.aspx">News</a>
+                                    &nbsp;|
+                                    <a href="Ebook.aspx">Ebooks</a>
+                                    &nbsp;|
+                                    <a href="Software.aspx">Software</a>
+                                    |
+                                    <a href="Seminar.aspx">Seminars</a>
+                                    &nbsp;|
+                                    <a href="Exhibition.aspx">Exhibitions</a>&nbsp;|
+                                    <a href="AboutUs.aspx">About Us</a> &nbsp;</td>
+                            </tr>
+                        </table>
+                        </div>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3" align="center"><marquee>
+                  <font size="2" color="rgb(103,83,2)">Online IT Society<sup>&copy; </sup>2013, Group3. 
+                  All Rights Reserved.</font></marquee>
+            </td>
+          </tr>
+      </table> 
+      </td>
+      </tr>
+     </table>
+    </form>
+</body>
+</html>

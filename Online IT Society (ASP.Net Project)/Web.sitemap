@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="Home.aspx" title="Home"  description="">
+
+    <siteMapNode url="Register.aspx" title="Register" description="" />
+    <siteMapNode url="Detail.aspx" title="Detail" description="" />
+    <siteMapNode url="DownloadDetail.aspx" title="Download Detail" description="" />
+
+    <siteMapNode url="trainer.aspx" title="Trainer" >
+      <siteMapNode url="AddNewCourse.aspx" title="Add New Course" />
+      <siteMapNode url="EditCourse.aspx" title="Edit Course" />
+    </siteMapNode>
+    <siteMapNode url="TrainerEditProfile.aspx" title="Trainer Edit Profile" />
+    <siteMapNode url="CheckEnrollment.aspx" title="Check Enrollment" />
+    <siteMapNode url="ViewCV.aspx" title="View CV" description="" />
+    <siteMapNode url="RequestTrainer.aspx" title="Request Trainer" description="" />
+    <siteMapNode url="JobVacancy.aspx" title="Job Vacancy"  description="" />
+    <siteMapNode url="Trainings.aspx" title="Training"  description="" >
+      <siteMapNode url="TrainingDetail.aspx" title="Training Detail" description="">
+        <siteMapNode url="CourseDetail.aspx" title="Course Detail" description="">
+          <siteMapNode url="Enroll.aspx" title="Enroll" description="" />
+        </siteMapNode>
+      </siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="ForSale.aspx" title="For Sale Items"  description="" >
+      <siteMapNode url="ItemDetail" title="Item Detail" description="" />
+    </siteMapNode>
+   <siteMapNode url="SaleandService.aspx" title="Sale and Service Center"  description="" />
+    <siteMapNode url="Seminar.aspx" title="Seminar"  description="" />
+    <siteMapNode url="Exhibition.aspx" title="Exhibition and Workshop"  description="" />
+    <siteMapNode url="QuesAndAns.aspx" title="Question and Answer"  description="" />
+    <siteMapNode url="ChatRoom.aspx" title="Chat Room"  description="" />
+    <siteMapNode url="Ebook.aspx" title="Ebook"  description="" />
+    <siteMapNode url="Software.aspx" title="Software"  description="" />
+    <siteMapNode url="News.aspx" title="News" description="" />
+    <siteMapNode url="Aboutus.aspx" title="About us" description="" />
+    <siteMapNode url="ContactUs.aspx" title="Contact Us" />
+
+    <siteMapNode url="MyAlert.aspx" title="My Alert" />
+    <siteMapNode url="MyPost.aspx" title="My Post" />
+    <siteMapNode url="SoldItem.aspx" title="Sold Item" />
+
+    <siteMapNode url="UploadActivities.aspx" title="Upload Activities" />
+    <siteMapNode url="UploadCV.aspx" title="Upload CV" />
+    <siteMapNode url="UploadForSale.aspx" title="Upload For Sale Item" />
+    <siteMapNode url="UploadJobVacanncy.aspx" title="Upload Job Vancancy" />
+    <siteMapNode url="UploadSaleAndService.aspx" title="Upload Sale and Service" />
+
+    <siteMapNode url="AdminLogin.aspx" title="Admin Login" >
+      <siteMapNode url="TodayPost.aspx" title="Today Post" />
+      <siteMapNode url="AdminUpload.aspx" title="Admin Upload" />
+      <siteMapNode url="ViewAlert.aspx" title="View Alert" description=""/>
+      
+      <siteMapNode url="ViewReport.aspx" title="View Report" description="">
+        <siteMapNode url="CreateTrainer.aspx" title="Create Trainer" description="" />
+      </siteMapNode>
+    </siteMapNode>
+
+  </siteMapNode>
+
+</siteMap>
