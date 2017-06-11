@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "C:\\Users\\cuong0906\\AndroidStudioProjects\\Customer_Mobile\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_delete.png",
+        "source": "C:\\Users\\cuong0906\\AndroidStudioProjects\\Customer_Mobile\\app\\src\\main\\res\\drawable-hdpi\\ic_delete.png"
+    },
+    {
+        "merged": "C:\\Users\\cuong0906\\AndroidStudioProjects\\Customer_Mobile\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_save.png",
+        "source": "C:\\Users\\cuong0906\\AndroidStudioProjects\\Customer_Mobile\\app\\src\\main\\res\\drawable-hdpi\\ic_save.png"
+    },
+    {
+        "merged": "C:\\Users\\cuong0906\\AndroidStudioProjects\\Customer_Mobile\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_update.png",
+        "source": "C:\\Users\\cuong0906\\AndroidStudioProjects\\Customer_Mobile\\app\\src\\main\\res\\drawable-hdpi\\ic_update.png"
+    },
+    {
+        "merged": "C:\\Users\\cuong0906\\AndroidStudioProjects\\Customer_Mobile\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_buy.png",
+        "source": "C:\\Users\\cuong0906\\AndroidStudioProjects\\Customer_Mobile\\app\\src\\main\\res\\drawable-hdpi\\ic_buy.png"
+    },
+    {
+        "merged": "C:\\Users\\cuong0906\\AndroidStudioProjects\\Customer_Mobile\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_new.png",
+        "source": "C:\\Users\\cuong0906\\AndroidStudioProjects\\Customer_Mobile\\app\\src\\main\\res\\drawable-hdpi\\ic_new.png"
+    }
+]

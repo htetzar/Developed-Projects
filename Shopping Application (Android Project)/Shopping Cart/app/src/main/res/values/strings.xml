@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Team 10</string>
+    <string name="newPostItem">Post Item</string>
+    <string name="delete_customer">Delete Customer</string>
+    <string name="Id">ID</string>
+    <string name="Category">Category</string>
+    <string name="Name">Name</string>
+    <string name="Description">Description</string>
+    <string name="Price">Price</string>
+    <string name="Buy">Buy</string>
+    <string name="Update">Update</string>
+    <string name="Delete">Delete</string>
+    <string name="Save">Save</string>
+</resources>
