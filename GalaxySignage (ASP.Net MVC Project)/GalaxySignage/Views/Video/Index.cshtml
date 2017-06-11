@@ -1,0 +1,145 @@
+﻿@model  IEnumerable<GalaxySignage.Models.Video>
+@section scripts
+{
+<script type='text/javascript' src='/Scripts/jwplayer.js'></script>
+<script type="text/javascript" language="javascript">
+    $(function () {
+        $(".play-btn").click(function (event) {
+            event.preventDefault();
+           // alert(this.href);
+            $.get(this.href, function (data) {
+                //alert('success');
+                //$('.model-content').replaceWith(data);
+                // jwplayer('container').play(data.url);
+                jwplayer("container").setup({
+                    flashplayer: "/jwplayer/player.swf",
+
+                    "autostart": "true",
+                    "playlist.position": "right",
+                    "playlist.size": 360,
+                    width: "100%",
+                    aspectratio: "16:9",
+                    file: data.url
+                });
+                $('.modal-title').text(data.name);
+                //jwplayer("container").load({ file: data.url });
+
+                //jwplayer("container").load([{ file: data.url }]);
+                $('#myModal').modal();
+                
+            });
+
+
+            $('#myModal').on('hidden.bs.modal', function () {
+                // jwplayer('container').stop();
+                jwplayer('container').remove();
+                
+
+            });
+
+        });
+
+        $("#checkAll").click(function () {
+            $("input[name='deleteInputs']").prop('checked', this.checked);;
+        });
+
+        $("input[name='deleteInputs']").click(function () {
+                if ($("input[name='deleteInputs']").length == $("input[name='deleteInputs']:checked").length) {
+                $("#checkAll")
+                    .prop('checked', true);
+            }
+                else {
+                $("#checkAll").prop('checked', false);;
+            }
+        });
+
+        $("#btnSubmit").click(function () {
+                var count = $("input[name='deleteInputs']:checked").length;
+                if (count == 0) {
+                alert("No rows selected to delete");
+                return false;
+            }
+                else {
+                return confirm(count + "row(s) will be deleted");
+            }
+
+            
+
+        });
+
+      
+    });
+    $(document).ready(function () {
+        $('#btnUpload').click(function (e) {
+            location.href = '@Url.Content("~/Video/VideoUpload/")';
+        });
+    });
+</script>
+}
+<h2>Video List</h2>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+            </div>
+            <div class="modal-body">
+                
+                <div id="container">Loading the player ...</div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Button trigger modal -->
+
+@using (Html.BeginForm("Index", "Video", FormMethod.Post))
+{
+    <a href="@Url.Action("VideoUpload", "Video")" class="btn btn-primary btn-sm active" role="button">Upload</a>
+        <input type="submit" id="btnSubmit" value="Delete" class="btn btn-primary btn-sm active" />
+            
+    <table class="table" border="1">
+            <thead>
+                <tr>
+                    <th>
+                        <input type="checkbox" id="checkAll" />
+                    </th>
+                    <th>
+                        @Html.DisplayName("Name")
+                    </th>
+                    <th>
+                        @Html.DisplayName("Duration")
+                    </th>
+                    <th>
+                        @Html.DisplayName("Size")
+                    </th>
+                    <th>
+                        @Html.DisplayName("Play")  
+                   </th>
+                </tr>
+            </thead>
+            <tbody>
+                @Html.EditorForModel()
+
+            </tbody>
+        </table>
+}
+@*@Html.PagedListPager(Model, page => Url.Action("Index", new { page }))*@
+<div style="text-align:center">
+    @using GalaxySignage.CustomHtmlHelpers
+    @using GalaxySignage.Models
+    @{Paging pg = ViewBag.Paging;}
+    @Html.CustomPager(pg, index => Url.Action("Index", "Video", new { page = index }))
+    </div>
+
+
+<!-- Modal -->
+
+  
+

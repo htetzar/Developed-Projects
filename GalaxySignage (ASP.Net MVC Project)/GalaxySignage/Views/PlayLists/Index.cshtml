@@ -1,0 +1,109 @@
+﻿@model IEnumerable<GalaxySignage.Models.Playlist>
+@section scripts
+{
+    <script type="text/javascript" language="javascript">
+    $(function () {
+        $("#checkAll").click(function () {
+            $("input[name='IdsToDelete']").prop('checked', this.checked);;
+        });
+
+        $("input[name='IdsToDelete']").click(function () {
+            if ($("input[name='IdsToDelete']").length == $("input[name='IdsToDelete']:checked").length) {
+                $("#checkAll")
+                    .prop('checked', true);
+
+            }
+            else{
+                $("#checkAll").prop('checked', false);;
+            }
+        });
+     
+        $("#btnSubmit").click(function () {
+            var count = $("input[name='IdsToDelete']:checked").length;
+            if (count == 0) {
+                alert("No rows selected to delete");
+            return false;
+    }
+            else {
+                return confirm(count + "row(s) will be deleted");
+            }
+        });
+
+    });      
+    </script>
+    }
+
+@{
+    ViewBag.Title = "Play Lists";
+}
+
+    <h2>Play Lists</h2>
+
+
+@using (Html.BeginForm("DeleteSelected", "PlayLists", FormMethod.Post))
+{
+
+    <a href="@Url.Action("Create", "PlayLists")" class="pull-right btn btn-primary btn-sm active" role="button">Create New</a>
+    <input type="submit" value="DeleteSelected" id="btnSubmit" class="pull-right btn btn-warning btn-sm active" />
+
+
+<table class="table" border="1" id="results">
+    <thead>
+        <tr>
+
+            <th><input type="checkbox" id="checkAll" /> </th>
+            <th align="center">
+                Name
+            </th>
+           <th align="center">
+               TotalDuration
+            </th>
+            <th align="center">
+                Videos
+            </th>
+            <th align="center">
+                Action
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+            @foreach (var item in Model)
+            {
+            <tr>
+                <td>
+                    <input type="checkbox" name="IdsToDelete" value="@item.Id" />                   
+                </td>
+                  <td>
+                    @item.Name
+                </td>
+
+               <td>
+                    @item.TotalDuration
+                </td>
+                <td>
+                    <ul>
+                            @foreach (var video in item.Videos)
+                            {
+                             <li>
+                                 @video.Name
+
+                             </li>
+                        }
+
+                    </ul>
+                </td>
+                <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                        @Html.ActionLink("Play", "Play", new { id = item.Id , from = "playlist"}) 
+                </td>                
+            </tr>
+}
+    </tbody>
+</table>    
+     
+}
+
+@Html.Partial("~/Views/Shared/_Paging.cshtml", (GalaxySignage.Models.PageList)ViewBag.Paging)
+
+
+

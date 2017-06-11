@@ -1,0 +1,72 @@
+﻿    <div id='Paging' style="text-align:center">
+        <ul class="pagination">
+            @if (ViewBag.Paging.MaxPageNo <= 3)
+            {
+                for (var i = 1; i <= ViewBag.Paging.MaxPageNo; i++)
+                {
+                    if (i == @ViewBag.Paging.curPage)
+                    {
+                        <li class="active">@Html.ActionLink(i.ToString(), "Index", new { pageNo = i })</li>
+                    }
+                    else
+                    {
+                        <li>@Html.ActionLink(i.ToString(), "Index", new { pageNo = i })</li>
+                    }
+                }
+            }
+            </ul>
+       <ul class="pagination">
+
+            @if (ViewBag.Paging.curPage == 1 && ViewBag.Paging.MaxPageNo > 3)
+            {
+                <li class="active">@Html.ActionLink("1", "Index", new { pageNo = 1 })</li>
+                <li>@Html.ActionLink((string)Convert.ToString(ViewBag.Paging.NextPages[0]), "Index", new { pageNo =ViewBag.Paging.NextPages[0] })</li>
+                <li>@Html.ActionLink((string)Convert.ToString(ViewBag.Paging.NextPages[1]), "Index", new { pageNo = ViewBag.Paging.NextPages[1] })</li>
+                <li>@Html.ActionLink(">>", "Index", new { pageNo = ViewBag.Paging.NextPages[0] })</li>
+                <li>@Html.ActionLink((string)Convert.ToString(ViewBag.Paging.MaxPageNo), "Index", new { pageNo = ViewBag.Paging.MaxPageNo })</li>
+            }
+        </ul>
+     <ul class="pagination">
+
+             @if (ViewBag.Paging.curPage == ViewBag.Paging.MaxPageNo && ViewBag.Paging.MaxPageNo > 3)
+             {
+                 <li>@Html.ActionLink("1", "Index", new { pageNo = 1 })</li>
+                 <li>@Html.ActionLink("<<", "Index", new { pageNo = ViewBag.Paging.PrevPages[0] })</li>
+                 <li>@Html.ActionLink((string)Convert.ToString(ViewBag.Paging.PrevPages[1]), "Index", new { pageNo = ViewBag.Paging.PrevPages[1] })</li>
+                 <li>@Html.ActionLink((string)Convert.ToString(ViewBag.Paging.PrevPages[0]), "Index", new { pageNo = ViewBag.Paging.PrevPages[0] })</li>
+                 <li class="active">@Html.ActionLink((string)Convert.ToString(ViewBag.Paging.MaxPageNo), "Index", new { pageNo = ViewBag.Paging.MaxPageNo })</li>
+             }
+         </ul>
+        <ul class="pagination">
+
+             @if (ViewBag.Paging.curPage != 1 && ViewBag.Paging.curPage != ViewBag.Paging.MaxPageNo && ViewBag.Paging.MaxPageNo > 3)
+             {
+                 <li>@Html.ActionLink("1", "Index", new { pageNo = 1 })</li>
+
+                 if (ViewBag.Paging.PrevPages[0] != 0 && ViewBag.Paging.PrevPages[0] > 0)
+                 {
+                     <li>@Html.ActionLink("<<", "Index", new { pageNo = ViewBag.Paging.PrevPages[0] })</li>
+                 }
+
+                 for (var i = 2; i >= 0; i--)
+                 {
+                     if (ViewBag.Paging.PrevPages[i] != 0 && ViewBag.Paging.PrevPages[i] > 0 && ViewBag.Paging.PrevPages[i] != 1)
+                     {
+                         <li>@Html.ActionLink((string)Convert.ToString(ViewBag.Paging.PrevPages[i]), "Index", new { pageNo = ViewBag.Paging.PrevPages[i] })</li>
+                     }
+                 }
+                 <li class="active">@Html.ActionLink((string)Convert.ToString(ViewBag.Paging.curPage), "Index", new { pageNo = ViewBag.Paging.curPage })</li>
+
+                 foreach (var nextplaylist in ViewBag.Paging.NextPages)
+                 {
+                     if (nextplaylist != ViewBag.Paging.MaxPageNo && nextplaylist < ViewBag.Paging.MaxPageNo)
+                     {
+                         <li>@Html.ActionLink((string)Convert.ToString(nextplaylist), "Index", new { pageNo = nextplaylist })</li>
+                     }
+                 }
+                 <li>@Html.ActionLink(">>", "Index", new { pageNo = ViewBag.Paging.NextPages[0] })</li>
+                 <li>@Html.ActionLink((string)Convert.ToString(ViewBag.Paging.MaxPageNo), "Index", new { pageNo = ViewBag.Paging.MaxPageNo })</li>
+             }
+         </ul>
+</div>
+

@@ -1,0 +1,47 @@
+﻿@using System.Configuration;
+@model IEnumerable<GalaxySignage.Models.Video>
+@{
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+    ViewBag.Title = "Play";
+}
+
+<h2></h2>
+
+<script type='text/javascript' src='/Scripts/jwplayer.js'></script>
+<div id="container">Loading the player ...</div>
+<script type="text/javascript">
+   
+   // $(function () {
+    jwplayer("container").setup({
+        flashplayer: "/jwplayer/player.swf",
+        playlist: [
+              @*Html.Raw(String.Join(",", Model.Select(v => String.Format("{{duration: 32, file:'/"+ ConfigurationManager.AppSettings["VideoFolder"]+"/{0}'}}", v.FileName))))*@
+              @*Html.Raw(String.Join(",", Model.Select(v => @Url.Content(String.Format( "~/"+ ConfigurationManager.AppSettings["VideoFolder"] + "/{0}", v.FileName)))))*@
+              @*Html.Raw(String.Join(",", Model.Select(v => @Url.Content(String.Format("{{duration: 32, file: '/"+ ConfigurationManager.AppSettings["VideoFolder"]+"/{0}'}}", v.FileName)))))*@
+              @*Url.Content(String.Join(",",Model.Select (v => String.Format( "/"+ ConfigurationManager.AppSettings["VideoFolder"] + "/{0}",v.FileName))))*@
+              @*@Html.Raw(String.Join(",", Model.Select(v => @Url.Content(String.Format( "~/"+ ConfigurationManager.AppSettings["VideoFolder"] + "/{0}", v.FileName)))))*@
+
+                 @if (ViewBag.Video!=null)
+                 {
+                 @Html.Raw(String.Join(",",String.Format("{{duration: 32, file:'{0}/{1}'}}",
+                  @Url.Content("~/" + ConfigurationManager.AppSettings["VideoFolder"]),
+                  ViewBag.Video.FileName)))
+                 }
+                 else
+                 {
+                  @Html.Raw(String.Join(",", Model.Select(v => 
+                 String.Format("{{duration: 32, file:'{0}/{1}'}}",
+                  @Url.Content("~/" + ConfigurationManager.AppSettings["VideoFolder"]),
+                  v.FileName))))
+                 }
+        ],
+        "autostart": "true",
+        "playlist.position": "right",
+        "playlist.size": 360,
+        width: "100%",
+        aspectratio: "16:9"
+
+    });
+    //});
+
+</script>
