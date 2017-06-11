@@ -1,0 +1,487 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E8E0B60F-4402-4A0E-A110-E6F17F942CB6}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LogicUniversity_WebApp</RootNamespace>
+    <AssemblyName>LogicUniversity_WebApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.7.1213, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\AjaxControlToolkit.NET45\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="AjaxMin, Version=4.97.4951.28478, Culture=neutral, PublicKeyToken=21ef50ce11b5d80f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\AjaxControlToolkit.NET45\AjaxMin.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.2012.Runtime.11.0.3452.0\lib\Microsoft.ReportViewer.WebForms.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.11.0.2\lib\net20\Microsoft.SqlServer.Types.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\packages\Microsoft.SqlServer.Types.11.0.2\nativeBinaries\x64\msvcr100.dll">
+      <Link>SqlServerTypes\x64\msvcr100.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\packages\Microsoft.SqlServer.Types.11.0.2\nativeBinaries\x64\SqlServerSpatial110.dll">
+      <Link>SqlServerTypes\x64\SqlServerSpatial110.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\packages\Microsoft.SqlServer.Types.11.0.2\nativeBinaries\x86\msvcr100.dll">
+      <Link>SqlServerTypes\x86\msvcr100.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\packages\Microsoft.SqlServer.Types.11.0.2\nativeBinaries\x86\SqlServerSpatial110.dll">
+      <Link>SqlServerTypes\x86\SqlServerSpatial110.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Default.aspx" />
+    <Content Include="Department\AcknowledgeDisbursementList.aspx" />
+    <Content Include="Department\ApproveStaffRequistion.aspx" />
+    <Content Include="Department\MaintainDepartmentInfo.aspx" />
+    <Content Include="Department\MaintainDisbursementDetail.aspx" />
+    <Content Include="Department\ManageAuthorityDelegation.aspx" />
+    <Content Include="Department\ViewStationaryRequisitionDetail.aspx" />
+    <Content Include="Department\ViewStationaryRequisitionList.aspx" />
+    <Content Include="Department\ViewStationaryRequisitionNew.aspx" />
+    <Content Include="Department\web.config" />
+    <Content Include="img\bg2.jpg" />
+    <Content Include="Scripts\css\CSS.css" />
+    <Content Include="Scripts\js\Extension.min.js" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="StationaryStore\AdjustStationaryStockDetail.aspx" />
+    <Content Include="StationaryStore\AdjustStationaryStockList.aspx" />
+    <Content Include="StationaryStore\AdjustStationaryStockNew.aspx" />
+    <Content Include="StationaryStore\DisbursementDetail.aspx" />
+    <Content Include="StationaryStore\DisbursementList.aspx" />
+    <Content Include="StationaryStore\GenerateReorderReportByCategories.aspx" />
+    <Content Include="StationaryStore\GenerateReorderReportBySupplier.aspx" />
+    <Content Include="StationaryStore\GenerateRequisitionTrendReport.aspx" />
+    <Content Include="StationaryStore\InventoryReport.aspx" />
+    <Content Include="StationaryStore\MaintainCatalogue.aspx" />
+    <Content Include="StationaryStore\MaintainCatalogueNew.aspx" />
+    <Content Include="StationaryStore\PreparePurchaseOrderDetail.aspx" />
+    <Content Include="StationaryStore\PreparePurchaseOrderList.aspx" />
+    <Content Include="StationaryStore\PreparePurchaseOrderNew.aspx" />
+    <Content Include="StationaryStore\ProcessStationaryRequisition.aspx" />
+    <Content Include="StationaryStore\ReceiveDelivery.aspx" />
+    <Content Include="StationaryStore\web.config" />
+    <Content Include="Scripts\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="Scripts\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Scripts\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="Scripts\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Scripts\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="Scripts\font-awesome\less\bordered-pulled.less" />
+    <Content Include="Scripts\font-awesome\less\core.less" />
+    <Content Include="Scripts\font-awesome\less\fixed-width.less" />
+    <Content Include="Scripts\font-awesome\less\font-awesome.less" />
+    <Content Include="Scripts\font-awesome\less\icons.less" />
+    <Content Include="Scripts\font-awesome\less\larger.less" />
+    <Content Include="Scripts\font-awesome\less\list.less" />
+    <Content Include="Scripts\font-awesome\less\mixins.less" />
+    <Content Include="Scripts\font-awesome\less\path.less" />
+    <Content Include="Scripts\font-awesome\less\rotated-flipped.less" />
+    <Content Include="Scripts\font-awesome\less\spinning.less" />
+    <Content Include="Scripts\font-awesome\less\stacked.less" />
+    <Content Include="Scripts\font-awesome\less\variables.less" />
+    <Content Include="Scripts\font-awesome\scss\font-awesome.scss" />
+    <Content Include="Scripts\font-awesome\scss\_bordered-pulled.scss" />
+    <Content Include="Scripts\font-awesome\scss\_core.scss" />
+    <Content Include="Scripts\font-awesome\scss\_fixed-width.scss" />
+    <Content Include="Scripts\font-awesome\scss\_icons.scss" />
+    <Content Include="Scripts\font-awesome\scss\_larger.scss" />
+    <Content Include="Scripts\font-awesome\scss\_list.scss" />
+    <Content Include="Scripts\font-awesome\scss\_mixins.scss" />
+    <Content Include="Scripts\font-awesome\scss\_path.scss" />
+    <Content Include="Scripts\font-awesome\scss\_rotated-flipped.scss" />
+    <Content Include="Scripts\font-awesome\scss\_spinning.scss" />
+    <Content Include="Scripts\font-awesome\scss\_stacked.scss" />
+    <Content Include="Scripts\font-awesome\scss\_variables.scss" />
+    <Content Include="Scripts\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Scripts\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Scripts\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Scripts\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="packages.config" />
+    <Content Include="LogicUniversity.Master" />
+    <Content Include="DataSetReorderBySupplier.xsc">
+      <DependentUpon>DataSetReorderBySupplier.xsd</DependentUpon>
+    </Content>
+    <None Include="DataSetReorderBySupplier.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetReorderBySupplier.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="DataSetReorderBySupplier.xss">
+      <DependentUpon>DataSetReorderBySupplier.xsd</DependentUpon>
+    </Content>
+    <None Include="Properties\PublishProfiles\Team10.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="Login.aspx" />
+    <Content Include="Scripts\css\bootstrap.css" />
+    <Content Include="Scripts\css\bootstrap.min.css" />
+    <Content Include="Scripts\css\customize.css" />
+    <Content Include="Scripts\css\images\ui-icons_444444_256x240.png" />
+    <Content Include="Scripts\css\images\ui-icons_555555_256x240.png" />
+    <Content Include="Scripts\css\images\ui-icons_777620_256x240.png" />
+    <Content Include="Scripts\css\images\ui-icons_777777_256x240.png" />
+    <Content Include="Scripts\css\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="Scripts\css\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Scripts\css\jquery-ui.min.css" />
+    <Content Include="Scripts\css\jquery-ui.structure.min.css" />
+    <Content Include="Scripts\css\jquery-ui.theme.min.css" />
+    <Content Include="Scripts\css\plugins\morris.css" />
+    <Content Include="Scripts\css\sb-admin.css" />
+    <Content Include="Scripts\font-awesome\css\font-awesome.css" />
+    <Content Include="Scripts\font-awesome\css\font-awesome.min.css" />
+    <Content Include="Scripts\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="Scripts\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Scripts\js\bootstrap.js" />
+    <Content Include="Scripts\js\bootstrap.min.js" />
+    <Content Include="Scripts\js\customize.js" />
+    <Content Include="Scripts\js\jquery-ui.min.js" />
+    <Content Include="Scripts\js\jquery.js" />
+    <Content Include="Scripts\js\plugins\flot\excanvas.min.js" />
+    <Content Include="Scripts\js\plugins\flot\flot-data.js" />
+    <Content Include="Scripts\js\plugins\flot\jquery.flot.js" />
+    <Content Include="Scripts\js\plugins\flot\jquery.flot.pie.js" />
+    <Content Include="Scripts\js\plugins\flot\jquery.flot.resize.js" />
+    <Content Include="Scripts\js\plugins\flot\jquery.flot.tooltip.min.js" />
+    <Content Include="Scripts\js\plugins\morris\morris-data.js" />
+    <Content Include="Scripts\js\plugins\morris\morris.js" />
+    <Content Include="Scripts\js\plugins\morris\morris.min.js" />
+    <Content Include="Scripts\js\plugins\morris\raphael.min.js" />
+    <Content Include="StationaryStore\DefaultStationaryStore.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataSetReorderBySupplier.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetReorderBySupplier.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Department\AcknowledgeDisbursementList.aspx.cs">
+      <DependentUpon>AcknowledgeDisbursementList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Department\AcknowledgeDisbursementList.aspx.designer.cs">
+      <DependentUpon>AcknowledgeDisbursementList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Department\ApproveStaffRequistion.aspx.cs">
+      <DependentUpon>ApproveStaffRequistion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Department\ApproveStaffRequistion.aspx.designer.cs">
+      <DependentUpon>ApproveStaffRequistion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Department\MaintainDepartmentInfo.aspx.cs">
+      <DependentUpon>MaintainDepartmentInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Department\MaintainDepartmentInfo.aspx.designer.cs">
+      <DependentUpon>MaintainDepartmentInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Department\MaintainDisbursementDetail.aspx.cs">
+      <DependentUpon>MaintainDisbursementDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Department\MaintainDisbursementDetail.aspx.designer.cs">
+      <DependentUpon>MaintainDisbursementDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Department\ManageAuthorityDelegation.aspx.cs">
+      <DependentUpon>ManageAuthorityDelegation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Department\ManageAuthorityDelegation.aspx.designer.cs">
+      <DependentUpon>ManageAuthorityDelegation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Department\ViewStationaryRequisitionDetail.aspx.cs">
+      <DependentUpon>ViewStationaryRequisitionDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Department\ViewStationaryRequisitionDetail.aspx.designer.cs">
+      <DependentUpon>ViewStationaryRequisitionDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Department\ViewStationaryRequisitionList.aspx.cs">
+      <DependentUpon>ViewStationaryRequisitionList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Department\ViewStationaryRequisitionList.aspx.designer.cs">
+      <DependentUpon>ViewStationaryRequisitionList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Department\ViewStationaryRequisitionNew.aspx.cs">
+      <DependentUpon>ViewStationaryRequisitionNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Department\ViewStationaryRequisitionNew.aspx.designer.cs">
+      <DependentUpon>ViewStationaryRequisitionNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogicUniversity.Master.cs">
+      <DependentUpon>LogicUniversity.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogicUniversity.Master.designer.cs">
+      <DependentUpon>LogicUniversity.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="StationaryStore\AdjustStationaryStockDetail.aspx.cs">
+      <DependentUpon>AdjustStationaryStockDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StationaryStore\AdjustStationaryStockDetail.aspx.designer.cs">
+      <DependentUpon>AdjustStationaryStockDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StationaryStore\AdjustStationaryStockList.aspx.cs">
+      <DependentUpon>AdjustStationaryStockList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StationaryStore\AdjustStationaryStockList.aspx.designer.cs">
+      <DependentUpon>AdjustStationaryStockList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StationaryStore\AdjustStationaryStockNew.aspx.cs">
+      <DependentUpon>AdjustStationaryStockNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StationaryStore\AdjustStationaryStockNew.aspx.designer.cs">
+      <DependentUpon>AdjustStationaryStockNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StationaryStore\DefaultStationaryStore.aspx.cs">
+      <DependentUpon>DefaultStationaryStore.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StationaryStore\DisbursementDetail.aspx.cs">
+      <DependentUpon>DisbursementDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StationaryStore\DisbursementDetail.aspx.designer.cs">
+      <DependentUpon>DisbursementDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StationaryStore\DisbursementList.aspx.cs">
+      <DependentUpon>DisbursementList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StationaryStore\DisbursementList.aspx.designer.cs">
+      <DependentUpon>DisbursementList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StationaryStore\GenerateReorderReportByCategories.aspx.cs">
+      <DependentUpon>GenerateReorderReportByCategories.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StationaryStore\GenerateReorderReportByCategories.aspx.designer.cs">
+      <DependentUpon>GenerateReorderReportByCategories.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StationaryStore\GenerateReorderReportBySupplier.aspx.cs">
+      <DependentUpon>GenerateReorderReportBySupplier.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StationaryStore\GenerateReorderReportBySupplier.aspx.designer.cs">
+      <DependentUpon>GenerateReorderReportBySupplier.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StationaryStore\GenerateRequisitionTrendReport.aspx.cs">
+      <DependentUpon>GenerateRequisitionTrendReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StationaryStore\GenerateRequisitionTrendReport.aspx.designer.cs">
+      <DependentUpon>GenerateRequisitionTrendReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StationaryStore\InventoryReport.aspx.cs">
+      <DependentUpon>InventoryReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StationaryStore\InventoryReport.aspx.designer.cs">
+      <DependentUpon>InventoryReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StationaryStore\MaintainCatalogue.aspx.cs">
+      <DependentUpon>MaintainCatalogue.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StationaryStore\MaintainCatalogue.aspx.designer.cs">
+      <DependentUpon>MaintainCatalogue.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StationaryStore\MaintainCatalogueNew.aspx.cs">
+      <DependentUpon>MaintainCatalogueNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StationaryStore\MaintainCatalogueNew.aspx.designer.cs">
+      <DependentUpon>MaintainCatalogueNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StationaryStore\PreparePurchaseOrderDetail.aspx.cs">
+      <DependentUpon>PreparePurchaseOrderDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StationaryStore\PreparePurchaseOrderDetail.aspx.designer.cs">
+      <DependentUpon>PreparePurchaseOrderDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StationaryStore\PreparePurchaseOrderList.aspx.cs">
+      <DependentUpon>PreparePurchaseOrderList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StationaryStore\PreparePurchaseOrderList.aspx.designer.cs">
+      <DependentUpon>PreparePurchaseOrderList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StationaryStore\PreparePurchaseOrderNew.aspx.cs">
+      <DependentUpon>PreparePurchaseOrderNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StationaryStore\PreparePurchaseOrderNew.aspx.designer.cs">
+      <DependentUpon>PreparePurchaseOrderNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StationaryStore\ProcessStationaryRequisition.aspx.cs">
+      <DependentUpon>ProcessStationaryRequisition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StationaryStore\ProcessStationaryRequisition.aspx.designer.cs">
+      <DependentUpon>ProcessStationaryRequisition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StationaryStore\ReceiveDelivery.aspx.cs">
+      <DependentUpon>ReceiveDelivery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StationaryStore\ReceiveDelivery.aspx.designer.cs">
+      <DependentUpon>ReceiveDelivery.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LogicUniversityController\LogicUniversityController.csproj">
+      <Project>{cd0a2b1e-1db1-4540-9def-462841e67e3b}</Project>
+      <Name>LogicUniversityController</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LogicUniversityDataModel\LogicUniversityDataModel.csproj">
+      <Project>{04ccfb6b-37ea-476e-ab02-d80717484349}</Project>
+      <Name>LogicUniversityDataModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Inventory.rdlc" />
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="ReportReorderByCategories.rdlc" />
+    <EmbeddedResource Include="ReportRequisitionByDepartment.rdlc" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <SaveServerSettingsInUserFile>True</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

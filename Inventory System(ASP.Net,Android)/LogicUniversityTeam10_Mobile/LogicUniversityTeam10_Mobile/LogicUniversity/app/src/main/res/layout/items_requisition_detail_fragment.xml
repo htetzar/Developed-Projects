@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="vertical">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:stretchColumns="*">
+
+        <TableRow android:gravity="center"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Name"
+                android:id="@+id/textView11"
+                style="@style/Widget.AppCompat.TextView.SpinnerItem" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:id="@+id/tvItemDescription"
+                android:layout_gravity="start"
+                android:textAlignment="textStart"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="ID"
+                android:id="@+id/textView1"
+                style="@style/Widget.AppCompat.TextView.SpinnerItem" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:id="@+id/tvItemCode"
+                android:layout_gravity="start"
+                android:textAlignment="textStart" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Quantity"
+                android:id="@+id/textView2"
+                style="@style/Widget.AppCompat.TextView.SpinnerItem" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:id="@+id/tvItemQty"
+                android:layout_gravity="start"
+                android:textAlignment="textStart" />
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>

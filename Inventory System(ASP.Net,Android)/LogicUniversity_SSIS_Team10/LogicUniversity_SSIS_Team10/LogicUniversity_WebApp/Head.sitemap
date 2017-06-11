@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="" title="A"  description="A">
+		<siteMapNode url="~/Department/ViewStationaryRequisitionList.aspx" title="View Stationary Requisition"  description="Stationary Requisition List">
+		</siteMapNode>
+		<siteMapNode url="~/Department/StationaryRequisitionNew.aspx" title="New Stationary Requisition"  description="Create New Stationary Requisition Form">
+		</siteMapNode>
+    </siteMapNode>	
+</siteMap>

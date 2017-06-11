@@ -1,0 +1,103 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="LogicUniversity.master.cs" Inherits="LogicUniversity_WebApp.LogicUniversity" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content=""/>
+    <title>Logic University Inventory Management System</title>
+    <!-- Bootstrap -->
+    <link href="Scripts/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Morris Plugin -->
+    <%--<link href="Scripts/css/plugins/morris.css" rel="stylesheet" />--%>
+    <!-- sa-admin -->
+    <link href="Scripts/css/sb-admin.css" rel="stylesheet" />
+    <!-- Font-awesome -->
+    <link href="Scripts/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <!-- Customize --> 
+    <link href="Scripts/css/customize.css" rel="stylesheet" />
+        <!-- jQuery UI-->
+    <link href="Scripts/css/jquery-ui.min.css" rel="stylesheet" />
+    <link href="Scripts/css/jquery-ui.structure.min.css" rel="stylesheet" />
+    <link href="Scripts/css/jquery-ui.theme.min.css" rel="stylesheet" />
+
+    <script src="../Scripts/js/jquery.js"></script>
+    <script src="../Scripts/js/bootstrap.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="formMaster" runat="server"> 
+        <div id="wrapper">
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Logic University</a>
+            </div>
+            <!-- Top Menu Items -->
+            <ul class="nav navbar-right top-nav">
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="fa fa-user"></i>
+                        <asp:Label ID="lblUserName" runat="server" Text="User Name"></asp:Label>
+                        (<asp:Label ID="lblUserRole" runat="server" Text="User Designation"></asp:Label>)
+                        <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li class="divider"></li>
+                        <li>
+                            <asp:LinkButton runat="server" ID="lBtnLogOut" OnClick="lBtnLogOut_Click1"><i class="fa fa-fw fa-power-off"></i>Log Out</asp:LinkButton>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- Sidebar Menu Items -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                    <asp:Menu ID="Menu1" runat="server" SkipLinkText="" CssClass="floatnone"
+                        IncludeStyleBlock="False" StaticMenuStyle-CssClass="nav navbar-nav side-nav">
+                    </asp:Menu>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+        <div id="page-wrapper">
+            <div class="container-fluid">
+                <!-- Content body-->
+                <asp:ContentPlaceHolder ID="body" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <!-- /.container-fluid -->
+        </div>
+        <!-- /#page-wrapper -->
+    </div>
+    <div class="clearfix"></div>
+    <div class="text-center">
+        <h4>AD Project &copy; by Team 10</h4>
+    </div>
+    </form>
+    <%--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>--%>
+    <!-- jQuery -->
+    
+    <!-- Bootstrap js-->
+    
+    <!-- jQuery UI-->
+    <script src="../Scripts/js/jquery-ui.min.js"></script>
+    <!-- customize jquery-->
+    <script src="../Scripts/js/customize.js"></script>
+    <%--<script src="Scripts/js/plugins/morris/raphael.min.js"></script>
+    <script src="Scripts/js/plugins/morris/morris.min.js"></script>--%>
+    <asp:ContentPlaceHolder id="footer" runat="server">
+    </asp:ContentPlaceHolder> 
+</body>
+</html>
