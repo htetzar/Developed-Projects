@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="77336db6dc924f4b801d6d7809c726e6" Name="Diagram1">
+        <EntityTypeShape EntityType="SA43_Team10A_LibrarySystemModel.BooksDetail" Width="1.5" PointX="3" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SA43_Team10A_LibrarySystemModel.EmpCredential" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SA43_Team10A_LibrarySystemModel.EmployeesDetail" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SA43_Team10A_LibrarySystemModel.LoanRecord" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="SA43_Team10A_LibrarySystemModel.LoanTransDetail" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SA43_Team10A_LibrarySystemModel.MembersDetail" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="SA43_Team10A_LibrarySystemModel.FK_BooksDetail_BookID" ManuallyRouted="false" />
+        <AssociationConnector Association="SA43_Team10A_LibrarySystemModel.FK__LoanRecor__Membe__182C9B23" ManuallyRouted="false" />
+        <AssociationConnector Association="SA43_Team10A_LibrarySystemModel.FK_LoanRecords_TransactionID" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
