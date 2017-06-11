@@ -1,0 +1,111 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Anonymous.master.cs" Inherits="Anonymous" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>TEAM 10 CA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link href="scripts/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="scripts/custom/top.css" rel="stylesheet" />
+    <link href="scripts/bootstrap/css/custome.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+    .imgSize
+     {
+         width: 140px;
+         height: 140px;
+     }
+   </style>
+    <script runat="server">
+
+        public string getUrl()
+        {
+            string url = "";
+            bool val1 = System.Web.HttpContext.Current.User.Identity.IsAuthenticated;
+
+            // var user = System.Web.Security.Membership.GetUser();
+            if (val1)
+            {
+                url = "UserAdmin/PropertyList_UserAdmin.aspx";
+            }else
+            {
+                url = "PropertyList_Anonymous.aspx";
+            }
+            return url;
+        }
+    </script>
+</head>   
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <div class="header">
+            <div class="container">
+                <a href="#" title=""><img src="Image/logo/LogoMakr (1).png" class="img-responsive text-left"/></a>
+                <ul class="nav nav-pills nav-main" id="mainMenu">                                            
+                      <li class="dropdown">                        
+                       <%-- <a href= <% =getUrl() %> class="dropdown-toggle disabled ">Sale</a>  --%>    
+                           <a href= "PropertyList_Anonymous.aspx" class="dropdown-toggle disabled ">Sale</a>                                    
+                      </li>
+                      <li class="dropdown">                       
+                        <a href="#" title="" class="dropdown-toggle disabled">Rent</a>                                        
+                      </li>
+                      <li class="dropdown">                        
+                        <a href="#" title="" class="dropdown-toggle disabled">Condos</a>
+                      </li>
+                      <li class="dropdown">                        
+                        <a href="#" title="" class="dropdown-toggle disabled">HDB</a>
+                      </li>
+                      <li class="dropdown">                        
+                        <a href="#" title="" class="dropdown-toggle disabled">Buyer</a>
+                      </li>
+                      <li class="dropdown">                        
+                        <a href="#" title="" class="dropdown-toggle disabled">New Project</a>
+                      </li>
+                      <li class="dropdown">                        
+                        <a href="#" title="" class="dropdown-toggle disabled">Find Agent</a>
+                      </li>
+                      <li class="dropdown">                        
+                        <a href="#" title="" class="dropdown-toggle disabled">News</a>
+                      </li>
+                      <li class="dropdown">                        
+                        <a href="#" title="" class="dropdown-toggle disabled">Prices</a>
+                      </li>
+                 </ul>
+            </div>
+        </div>
+        <asp:ContentPlaceHolder ID="body" runat="server">       
+        </asp:ContentPlaceHolder>
+    </div>
+        <div >
+        <div class="header">
+            <div class="container">
+                <div class="row">
+                <div class="col-md-6">
+                    Properties for Sales    Properties for Rent     Term of Use
+                </div>
+                <div class="col-md-6 text-right"> Copyright 2016 Team10</div>
+                </div>
+                <div class="text-center" style="z-index: 100;">
+            <label class="control-label">Team10</label>
+        </div>
+            </div>             
+        </div>         
+        <asp:ContentPlaceHolder ID="footer" runat="server">
+        </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $("#clickRegister").click(function () {
+            $("#_modalRegister").modal('show');
+        });
+        $("#clickLogin").click(function () {
+            $("#_modalSignin").modal('show');
+        })
+    </script>
+    <script src="scripts/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

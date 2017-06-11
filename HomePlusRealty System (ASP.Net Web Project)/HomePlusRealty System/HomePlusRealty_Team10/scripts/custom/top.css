@@ -1,0 +1,31 @@
+﻿body 
+{
+    color:black;
+}
+.header
+{
+    background-color:rgba(255, 0, 0, 0.8) ;
+}
+.footer {
+    background-color: rgba(255, 0, 0, 0.8);
+}
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    color: black;;
+    background-color: hsl(0, 100%, 45%);
+}
+.nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    color: black;
+    background-color: hsl(0, 100%, 50%);
+}
+a {
+    color: black;
+    font-weight:bold;
+    text-decoration:none;
+}
+.breadcrumb
+{
+    background-color:rgb(255, 255, 255);
+    padding: 0px 15px;
+    color:#337ab7;
+}

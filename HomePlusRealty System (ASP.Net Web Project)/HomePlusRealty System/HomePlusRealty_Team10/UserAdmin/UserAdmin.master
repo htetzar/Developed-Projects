@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="UserAdmin.master.cs" Inherits="UserAdmin_UserAdmin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Management</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link href="../scripts/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="../scripts/custom/top.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+     .imgSize
+     {
+         width: 100px;
+         height: 100px;
+     }
+   </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>  
+             
+        <asp:ContentPlaceHolder ID="body" runat="server">                   
+        </asp:ContentPlaceHolder> 
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Team10</a>
+                    </div>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown ">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                <asp:Label runat="server" CssClass="control-label" ID="_txtUsername"></asp:Label>
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li>
+                                    <asp:LinkButton runat="server" ID="_logoutBtn" Text="Log Out" OnClick="_logoutBtn_Click"></asp:LinkButton>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>                   
+                </div>
+            </nav>
+        <br /><br /><br />
+        <% if (HttpContext.Current.User.Identity.IsAuthenticated)
+            { %>
+        <asp:LinkButton runat="server" ID="lbSale" Text="Sale" OnClick="_lbSale_Click"></asp:LinkButton>  
+        <% } %>                          
+    </div>
+        <div>
+        <asp:ContentPlaceHolder ID="footer" runat="server">
+        </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../scripts/bootstrap/js/bootstrap.js"></script>
+</body>
+</html>
